@@ -1,11 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Annam Parabrahma Aaharam</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial, sans-serif;
+background:#f8f3e7;
+color:#333;
+line-height:1.8;
+}
+
+.navbar{
+position:sticky;
+top:0;
+background:white;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+z-index:1000;
+}
+
+.navbar h2{
+color:#2E5D34;
+font-size:22px;
+}
+
+.navbar ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+.navbar a{
+text-decoration:none;
+color:#333;
+font-weight:bold;
+}
+
+.hero{
+min-height:100vh;
+background:linear-gradient(135deg,#2E5D34,#6FA35C);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px 20px;
+color:white;
+}
+
+.logo{
+width:220px;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:52px;
+margin-bottom:15px;
+}
+
+.tagline{
+font-size:24px;
+margin-bottom:25px;
+font-weight:bold;
+}
+
+.description{
+max-width:700px;
+font-size:20px;
+margin-bottom:35px;
+}
+
+.buttons{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.btn{
+background:#C8A45D;
+color:black;
+padding:15px 30px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.btn-secondary{
+background:white;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:34px;
+}
+
+.tagline{
+font-size:18px;
+}
+
+.description{
+font-size:16px;
+}
+
+.navbar{
+flex-direction:column;
+gap:10px;
+}
+
+.navbar ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+}
+
+</style>
+
 </head>
+
 <body>
 
+<nav class="navbar">
+
+<h2>Annam Parabrahma</h2>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#story">Story</a></li>
+<li><a href="#offerings">Offerings</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<img src="logo.png" class="logo" alt="Annam Parabrahma Logo">
+
+<h1>ANNAM PARABRAHMA AAHARAM</h1>
+
+<p class="tagline">
+Feeding The Soul, Not Just The Body
+</p>
+
+<p class="description">
+Sharing nature's abundance with every family through purity, tradition and devotion.
+</p>
+
+<div class="buttons">
+
+<a href="#story" class="btn">
+Explore Our Journey
+</a>
+
+<a href="#offerings" class="btn btn-secondary">
+Categories We Are Building
+</a>
+
+</div>
+
+</section>
+
 </body>
+
 </html>

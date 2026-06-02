@@ -52,6 +52,7 @@ padding:80px 10%;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 gap:30px;
+background:#fdfaf3;
 }
 
 .vm-card{
@@ -73,6 +74,7 @@ font-size:20px;
 
 .values{
 padding:80px 10%;
+background:white;
 }
 
 .values-grid{
@@ -127,7 +129,7 @@ margin-bottom:15px;
 
 .why-choose{
 padding:80px 10%;
-background:white;
+background:#f4f9f4;
 }
 
 .why-box{
@@ -179,11 +181,14 @@ justify-content:space-between;
 align-items:center;
 box-shadow:0 2px 10px rgba(0,0,0,0.08);
 z-index:1000;
+border-bottom:1px solid rgba(0,0,0,0.05);
+backdrop-filter:blur(10px);
 }
 
 .navbar h2{
 color:#2E5D34;
-font-size:22px;
+font-size:24px;
+font-weight:600;
 }
 
 .navbar ul{
@@ -199,7 +204,7 @@ font-weight:bold;
 }
 
 .hero{
-min-height:30vh;
+min-height:70vh;
 background:linear-gradient(135deg,#2E5D34,#6FA35C);
 display:flex;
 flex-direction:column;
@@ -245,28 +250,30 @@ justify-content:center;
 .btn{
 background:#C8A45D;
 color:black;
-padding:15px 30px;
-border-radius:8px;
+padding:15px 32px;
+border-radius:10px;
 text-decoration:none;
-font-weight:bold;
+font-weight:600;
+transition:all 0.3s ease;
 }
 
-.btn-secondary{
-background:white;
+.btn:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
 @media(max-width:768px){
 
 .hero h1{
-font-size:34px;
+font-size:42px;
 }
 
 .tagline{
-font-size:18px;
+font-size:22px;
 }
 
 .description{
-font-size:16px;
+font-size:18px;
 }
 
 .navbar{
@@ -386,7 +393,7 @@ Food should not merely fill our plates — it should nourish our lives.
 
 </section>
 
-<section id="philosophy" style="padding:80px 10%; background:white;">
+<section id="philosophy" style="padding:80px 10%; background:#ffffff;">
 
 <h2 style="color:#2E5D34; font-size:48px; margin-bottom:40px;">
 Our Philosophy

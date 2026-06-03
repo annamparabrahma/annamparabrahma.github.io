@@ -110,7 +110,7 @@ background:#f8f3e7;
 
 .offerings-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:25px;
 margin-top:40px;
 }
@@ -121,13 +121,27 @@ padding:40px;
 border-radius:15px;
 box-shadow:0 5px 15px rgba(0,0,0,0.08);
 text-align:center;
+transition:all 0.3s ease;
+}
+
+.offering-card:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 30px rgba(0,0,0,0.12);
+}
+
+.offering-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:12px;
+margin-bottom:20px;
 }
 
 .offering-card h3{
 font-size:24px;
 color:#2E5D34;
 margin-bottom:15px;
-}  
+}
 
 .why-choose{
 padding:80px 8%;
@@ -626,6 +640,7 @@ Categories We Are Building
 <div class="offerings-grid">
 
 <div class="offering-card">
+<img src="images/vegetables.png" alt="Vegetables">
 <h3>🥬 Vegetables</h3>
 <p>
 Fresh produce sourced with care to support healthier families and communities.
@@ -633,6 +648,7 @@ Fresh produce sourced with care to support healthier families and communities.
 </div>
 
 <div class="offering-card">
+<img src="images/fruits.png" alt="Fruits">
 <h3>🥭 Fruits</h3>
 <p>
 Seasonal fruits selected with a focus on quality, freshness and responsible sourcing.
@@ -640,6 +656,7 @@ Seasonal fruits selected with a focus on quality, freshness and responsible sour
 </div>
 
 <div class="offering-card">
+<img src="images/groceries.png" alt="Natural Groceries">
 <h3>🌾 Natural Groceries</h3>
 <p>
 Everyday essentials inspired by simplicity, tradition and conscious living.
@@ -647,6 +664,7 @@ Everyday essentials inspired by simplicity, tradition and conscious living.
 </div>
 
 <div class="offering-card">
+<img src="images/wood-pressed-oils.png" alt="Wood Pressed Oils">
 <h3>🫒 Wood Pressed Oils</h3>
 <p>
 Traditional oils prepared using time-honoured methods that respect both quality and heritage.
@@ -654,6 +672,7 @@ Traditional oils prepared using time-honoured methods that respect both quality 
 </div>
 
 <div class="offering-card">
+<img src="images/traditional-foods.png" alt="Traditional Foods">
 <h3>🫙 Traditional Foods</h3>
 <p>
 Foods rooted in culture, tradition and generations of wisdom.

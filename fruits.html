@@ -1,1 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fruits Collection | Annam Parabrahma Aaharam</title>
+  
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f8f3e7;
+color:#333;
+line-height:1.8;
+}
+
+.navbar{
+background:white;
+padding:20px 8%;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.navbar a{
+text-decoration:none;
+color:#2E5D34;
+font-weight:600;
+font-size:22px;
+}
+
+.hero{
+background:linear-gradient(135deg,#1F4425,#2E5D34,#6FA35C);
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+max-width:900px;
+margin:auto;
+}
+
+.section{
+padding:80px 8%;
+background:white;
+}
+
+.section h2{
+color:#2E5D34;
+font-size:40px;
+margin-bottom:30px;
+text-align:center;
+}
+
+.section-content{
+max-width:1000px;
+margin:auto;
+font-size:20px;
+line-height:1.9;
+}
+
+.info-box{
+padding:60px 8%;
+background:#f8f3e7;
+}
+
+.info-card{
+max-width:1000px;
+margin:auto;
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.info-card h2{
+color:#2E5D34;
+margin-bottom:20px;
+text-align:center;
+}
+
+.info-card p{
+font-size:18px;
+text-align:center;
+max-width:800px;
+margin:auto;
+}
+.products{
+padding:80px 8%;
+}
+
+.products h2{
+text-align:center;
+font-size:40px;
+color:#2E5D34;
+margin-bottom:50px;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.product-card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+text-align:center;
+transition:all 0.3s ease;
+}
+
+.product-card:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 30px rgba(0,0,0,0.12);
+}
+
+.product-card img{
+width:100%;
+height:320px;
+object-fit:cover;
+border-radius:12px;
+margin-bottom:20px;
+}
+
+.product-card h3{
+color:#2E5D34;
+}
+.footer{
+background:#2E5D34;
+color:white;
+text-align:center;
+padding:30px;
+}
+@media(max-width:768px){
+
+.hero h1{
+font-size:32px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+.section h2{
+font-size:30px;
+}
+
+.navbar{
+flex-direction:column;
+gap:15px;
+}
+.product-card img{
+height:250px;
+}
+
+.products h2{
+font-size:30px;
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+<a href="index.html">← Back to Home</a>
+
+<img src="logo.png" alt="APA Logo" style="height:60px;">
+
+</div>
+
+<section class="hero">
+
+<h1>Fruits Collection</h1>
+  
+<p>
+Fruits are nature's gift, offering freshness, nourishment and vibrant flavours in every season.
+
+At Annam Parabrahma Aaharam, our Fruits Collection celebrates a diverse range of fruits chosen with a focus on quality, freshness and responsible sourcing.
+
+Because enjoying wholesome fruits is one of the simplest ways to support a balanced lifestyle.
+</p>
+
+</section>
+
+<section class="section">
+
+<h2>Why Fruits?</h2>
+  
+<div class="section-content">
+
+<div class="section-content">
+
+<p>
+Fruits are an important part of everyday food traditions and are valued for their natural taste, variety and nutritional benefits.
+</p>
+
+<br>
+
+<p>
+From seasonal favourites to unique regional varieties, fruits bring colour, freshness and enjoyment to every meal.
+</p>
+
+<br>
+
+<p>
+Our Fruits Collection reflects an appreciation for naturally grown produce and the diversity of fruits available across different regions.
+</p>
+
+<br>
+
+<p>
+Because good food begins with nature's simplest offerings.
+</p>
+
+</div>
+
+</section>
+
+<section class="info-box">
+
+<div class="info-card">
+
+<h2>What Guides Our Fruit Selection?</h2>
+  
+<p>
+Our Fruits Collection is guided by freshness, quality, seasonal availability and an appreciation for naturally wholesome produce.
+</p>
+
+</div>
+
+</section>
+  
+<section class="products">
+
+<h2>🍘 Traditional Savoury Snacks</h2>
+
+<div class="product-grid">
+
+<div class="product-card">
+<img src="images/sakinalu.png" alt="Sakinalu">
+<h3>Sakinalu</h3>
+</div>
+
+<div class="product-card">
+<img src="images/chegodilu.png" alt="Chegodilu">
+<h3>Chegodilu</h3>
+</div>
+
+<div class="product-card">
+<img src="images/janthikalu.png" alt="Janthikalu">
+<h3>Janthikalu</h3>
+</div>
+
+<div class="product-card">
+<img src="images/murukulu.png" alt="Murukulu">
+<h3>Murukulu</h3>
+</div>
+
+<div class="product-card">
+<img src="images/karappusa.png" alt="Karappusa">
+<h3>Karappusa</h3>
+</div>
+
+<div class="product-card">
+<img src="images/pappu-chekkalu.png" alt="Pappu Chekkalu">
+<h3>Pappu Chekkalu</h3>
+</div>
+<div class="product-card">
+<img src="images/karam-gavvalu.png" alt="Karam Gavvalu">
+<h3>Karam Gavvalu</h3>
+</div>
+
+<div class="product-card">
+<img src="images/khara-boondi.png" alt="Khara Boondi">
+<h3>Khara Boondi</h3>
+</div>
+
+<div class="product-card">
+<img src="images/atukula-mixture.png" alt="Atukula Mixture">
+<h3>Atukula Mixture</h3>
+</div>
+
+<div class="product-card">
+<img src="images/ragi-murukulu.png" alt="Ragi Murukulu">
+<h3>Ragi Murukulu</h3>
+</div>
+
+<div class="product-card">
+<img src="images/jowar-janthikalu.png" alt="Jowar Janthikalu">
+<h3>Jowar Janthikalu</h3>
+</div>
+
+<div class="product-card">
+<img src="images/millet-chekkalu.png" alt="Millet Chekkalu">
+<h3>Millet Chekkalu</h3>
+</div>
+
+<div class="product-card">
+<img src="images/korra-mixture.png" alt="Korra Mixture">
+<h3>Korra Mixture</h3>
+</div>
+</div>
+
+</section>
+<section class="products">
+
+<h2>🍯 Traditional Sweets & Laddus</h2>
+
+<div class="product-grid">
+
+<div class="product-card">
+<img src="images/ariselu.png" alt="Ariselu">
+<h3>Ariselu</h3>
+</div>
+
+<div class="product-card">
+<img src="images/bakshalu.png" alt="Bakshalu">
+<h3>Bakshalu (Bobbatlu)</h3>
+</div>
+
+<div class="product-card">
+<img src="images/boondi-laddu.png" alt="Boondi Laddu">
+<h3>Boondi Laddu</h3>
+</div>
+
+<div class="product-card">
+<img src="images/sunnundalu.png" alt="Sunnundalu">
+<h3>Sunnundalu</h3>
+</div>
+
+<div class="product-card">
+<img src="images/nuvvula-laddu.png" alt="Nuvvula Laddu">
+<h3>Nuvvula Laddu</h3>
+</div>
+
+<div class="product-card">
+<img src="images/rava-laddu.png" alt="Rava Laddu">
+<h3>Rava Laddu</h3>
+</div>
+
+<div class="product-card">
+<img src="images/palli-laddu.png" alt="Palli Laddu">
+<h3>Palli Laddu</h3>
+</div>
+
+<div class="product-card">
+<img src="images/ragi-laddu.png" alt="Ragi Laddu">
+<h3>Ragi Laddu</h3>
+</div>
+
+<div class="product-card">
+<img src="images/bellam-gavvalu.png" alt="Bellam Gavvalu">
+<h3>Bellam Gavvalu</h3>
+</div>
+
+<div class="product-card">
+<img src="images/kajjikayalu.png" alt="Kajjikayalu">
+<h3>Kajjikayalu</h3>
+</div>
+
+<div class="product-card">
+<img src="images/dry-fruit-laddu.png" alt="Dry Fruit Laddu">
+<h3>Dry Fruit Laddu</h3>
+</div>
+
+</div>
+
+</section>
+<section style="
+padding:80px 8%;
+background:#eef7ee;
+">
+
+<div style="
+max-width:1000px;
+margin:auto;
+background:white;
+padding:40px;
+border-left:6px solid #2E5D34;
+border-radius:15px;
+font-size:20px;
+line-height:1.9;
+">
+
+<h2 style="
+color:#2E5D34;
+margin-bottom:25px;
+">
+Our Collection Is Taking Shape
+</h2>
+
+<p>
+We are thoughtfully developing our Traditional Foods Collection and look forward to sharing more details as the journey progresses.
+</p>
+
+<br>
+
+<p>
+Every traditional recipe in our collection reflects our appreciation for heritage foods, authentic preparation methods and the timeless wisdom preserved through generations.
+</p>
+
+<br>
+
+<p style="
+font-weight:600;
+color:#2E5D34;
+">
+Preserving traditional foods means preserving culture, memories and community.
+</p>
+
+</div>
+
+</section>
+<div class="footer">
+
+<h2 style="margin-bottom:10px;">
+ANNAM PARABRAHMA AAHARAM
+</h2>
+
+<p style="font-size:18px;margin-bottom:20px;">
+Feeding The Soul, Not Just The Body
+</p>
+
+<p style="max-width:700px;margin:auto;">
+Encouraging better food choices through awareness, tradition and responsibility.
+</p>
+<br>
+
+<p>
+📧 <a href="mailto:annamparabrahma@gmail.com" style="color:white;">
+annamparabrahma@gmail.com
+</a>
+</p>
+
+<p>
+🌐 <a href="https://annamparabrahma.com" target="_blank" style="color:white;">
+annamparabrahma.com
+</a>
+</p>
+<p style="margin-top:20px;">
+<a href="index.html" style="color:white;text-decoration:none;font-weight:600;">
+← Back to Home
+</a>
+</p>
+<br><br>
+
+<p style="font-size:14px;opacity:0.8;">
+© 2026 Annam Parabrahma Aaharam. All Rights Reserved.
+</p>
+
+</div>
+  
+</body>
+
+</html>

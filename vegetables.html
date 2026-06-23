@@ -1,1 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vegetables Collection | Annam Parabrahma Aaharam</title> 
+  
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f8f3e7;
+color:#333;
+line-height:1.8;
+}
+
+.navbar{
+background:white;
+padding:20px 8%;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.navbar a{
+text-decoration:none;
+color:#2E5D34;
+font-weight:600;
+font-size:22px;
+}
+
+.hero{
+background:linear-gradient(135deg,#1F4425,#2E5D34,#6FA35C);
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+max-width:900px;
+margin:auto;
+}
+
+.section{
+padding:80px 8%;
+background:white;
+}
+
+.section h2{
+color:#2E5D34;
+font-size:40px;
+margin-bottom:30px;
+text-align:center;
+}
+
+.section-content{
+max-width:1000px;
+margin:auto;
+font-size:20px;
+line-height:1.9;
+}
+
+.info-box{
+padding:60px 8%;
+background:#f8f3e7;
+}
+
+.info-card{
+max-width:1000px;
+margin:auto;
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.info-card h2{
+color:#2E5D34;
+margin-bottom:20px;
+text-align:center;
+}
+
+.info-card p{
+font-size:18px;
+text-align:center;
+max-width:800px;
+margin:auto;
+}
+.products{
+padding:80px 8%;
+}
+
+.products h2{
+text-align:center;
+font-size:40px;
+color:#2E5D34;
+margin-bottom:50px;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.product-card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+text-align:center;
+transition:all 0.3s ease;
+}
+
+.product-card:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 30px rgba(0,0,0,0.12);
+}
+
+.product-card img{
+width:100%;
+height:auto;
+border-radius:12px;
+margin-bottom:20px;
+}
+
+.product-card h3{
+color:#2E5D34;
+}
+.footer{
+background:#2E5D34;
+color:white;
+text-align:center;
+padding:30px;
+}
+@media(max-width:768px){
+
+.hero h1{
+font-size:32px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+.section h2{
+font-size:30px;
+}
+
+.navbar{
+flex-direction:column;
+gap:15px;
+}
+.product-card img{
+height:250px;
+}
+
+.products h2{
+font-size:30px;
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+<a href="index.html">← Back to Home</a>
+
+<img src="logo.png" alt="APA Logo" style="height:60px;">
+
+</div>
+
+<section class="hero">
+
+<h1>Vegetables Collection</h1>  
+  
+<p>
+Vegetables are an essential part of everyday nutrition, offering freshness, variety and natural nourishment.
+
+At Annam Parabrahma Aaharam, our Vegetables Collection celebrates farm-fresh produce selected with care, quality and responsible sourcing in mind.
+
+Because wholesome meals begin with fresh vegetables from nature.
+</p>
+
+</section>
+
+<section class="section">
+
+<h2>Why Vegetables?</h2> 
+  
+<div class="section-content">
+
+<p>
+Vegetables form the foundation of balanced meals and are valued for their freshness, versatility and nutritional benefits.
+</p>
+
+<br>
+
+<p>
+From everyday essentials to seasonal varieties, vegetables add colour, flavour and nourishment to every kitchen.
+</p>
+
+<br>
+
+<p>
+Our Vegetables Collection reflects our appreciation for naturally grown produce and responsible food choices.
+</p>
+
+<br>
+
+<p>
+Because healthy food starts with fresh ingredients.
+</p>
+
+</div>
+
+</section>
+
+<section class="info-box">
+
+<div class="info-card">
+
+<h2>What Guides Our Vegetable Selection?</h2> 
+  
+<p>
+Our Vegetables Collection is guided by freshness, quality, seasonal availability and an appreciation for naturally wholesome produce.
+</p>
+
+</div>
+
+</section>
+  
+
+
+<section class="products">
+
+<h2>🥬 Fresh Vegetables Collection</h2>
+<div class="product-grid">
+
+<div class="product-card">
+<img src="images/tomato-annam-parabrahma.png" alt="Tomato">
+<h3>Tomato</h3>
+</div>
+
+<div class="product-card">
+<img src="images/onion-annam-parabrahma.png" alt="Onion">
+<h3>Onion</h3>
+</div>
+
+<div class="product-card">
+<img src="images/potato-annam-parabrahma.png" alt="Potato">
+<h3>Potato</h3>
+</div>
+
+<div class="product-card">
+<img src="images/brinjal-annam-parabrahma.png" alt="Brinjal">
+<h3>Brinjal (Eggplant)</h3>
+</div>
+
+<div class="product-card">
+<img src="images/okra-annam-parabrahma.png" alt="Okra">
+<h3>Okra (Lady Finger)</h3>
+</div>
+
+<div class="product-card">
+<img src="images/bottle-gourd-annam-parabrahma.png" alt="Bottle Gourd">
+<h3>Bottle Gourd</h3>
+</div>
+
+<div class="product-card">
+<img src="images/ridge-gourd-annam-parabrahma.png" alt="Ridge Gourd">
+<h3>Ridge Gourd</h3>
+</div>
+
+<div class="product-card">
+<img src="images/bitter-gourd-annam-parabrahma.png" alt="Bitter Gourd">
+<h3>Bitter Gourd</h3>
+</div>
+
+<div class="product-card">
+<img src="images/cabbage-annam-parabrahma.png" alt="Cabbage">
+<h3>Cabbage</h3>
+</div>
+
+<div class="product-card">
+<img src="images/cauliflower-annam-parabrahma.png" alt="Cauliflower">
+<h3>Cauliflower</h3>
+</div>
+
+<div class="product-card">
+<img src="images/carrot-annam-parabrahma.png" alt="Carrot">
+<h3>Carrot</h3>
+</div>
+
+<div class="product-card">
+<img src="images/beetroot-annam-parabrahma.png" alt="Beetroot">
+<h3>Beetroot</h3>
+</div>
+
+<div class="product-card">
+<img src="images/radish-annam-parabrahma.png" alt="Radish">
+<h3>Radish</h3>
+</div>
+
+<div class="product-card">
+<img src="images/cucumber-annam-parabrahma.png" alt="Cucumber">
+<h3>Cucumber</h3>
+</div>
+
+<div class="product-card">
+<img src="images/green-chilli-annam-parabrahma.png" alt="Green Chilli">
+<h3>Green Chilli</h3>
+</div>
+
+<div class="product-card">
+<img src="images/capsicum-annam-parabrahma.png" alt="Capsicum">
+<h3>Capsicum</h3>
+</div>
+
+<div class="product-card">
+<img src="images/drumstick-annam-parabrahma.png" alt="Drumstick">
+<h3>Drumstick</h3>
+</div>
+
+<div class="product-card">
+<img src="images/sweet-corn-annam-parabrahma.png" alt="Sweet Corn">
+<h3>Sweet Corn</h3>
+</div>
+
+<div class="product-card">
+<img src="images/spinach-annam-parabrahma.png" alt="Spinach">
+<h3>Spinach</h3>
+</div>
+
+<div class="product-card">
+<img src="images/coriander-leaves-annam-parabrahma.png" alt="Coriander Leaves">
+<h3>Coriander Leaves</h3>
+</div>
+
+<div class="product-card">
+<img src="images/curry-leaves-annam-parabrahma.png" alt="Curry Leaves">
+<h3>Curry Leaves</h3>
+</div>
+
+<div class="product-card">
+<img src="images/mint-leaves-annam-parabrahma.png" alt="Mint Leaves">
+<h3>Mint Leaves</h3>
+</div>
+
+<div class="product-card">
+<img src="images/munaga-aaku-annam-parabrahma.png" alt="Munaga Aaku">
+<h3>Munaga Aaku (Moringa Leaves)</h3>
+</div>
+
+<div class="product-card">
+<img src="images/gongura-annam-parabrahma.png" alt="Gongura">
+<h3>Gongura</h3>
+</div>
+
+</div>  
+
+</section>
+
+<div style="
+max-width:1000px;
+margin:auto;
+background:white;
+padding:40px;
+border-left:6px solid #2E5D34;
+border-radius:15px;
+font-size:20px;
+line-height:1.9;
+">
+
+<h2 style="
+color:#2E5D34;
+margin-bottom:25px;
+">
+Our Collection Is Taking Shape
+</h2>
+
+<p>
+Our Fruits Collection celebrates the diversity, freshness and natural goodness found across seasonal and regional fruits.
+</p>
+
+<br>
+
+<p>
+Every fruit in our collection reflects our appreciation for freshness, quality and naturally wholesome produce.
+</p>
+
+<br>
+
+<p style="
+font-weight:600;
+color:#2E5D34;
+">
+Nature offers abundance, variety and nourishment in every season.
+</p>
+
+</div>
+
+
+<div class="footer">
+
+<h2 style="margin-bottom:10px;">
+ANNAM PARABRAHMA AAHARAM
+</h2>
+
+<p style="font-size:18px;margin-bottom:20px;">
+Feeding The Soul, Not Just The Body
+</p>
+
+<p style="max-width:700px;margin:auto;">
+Encouraging better food choices through awareness, tradition and responsibility.
+</p>
+<br>
+
+<p>
+📧 <a href="mailto:annamparabrahma@gmail.com" style="color:white;">
+annamparabrahma@gmail.com
+</a>
+</p>
+
+<p>
+🌐 <a href="https://annamparabrahma.com" target="_blank" style="color:white;">
+annamparabrahma.com
+</a>
+</p>
+<p style="margin-top:20px;">
+<a href="index.html" style="color:white;text-decoration:none;font-weight:600;">
+← Back to Home
+</a>
+</p>
+<br><br>
+
+<p style="font-size:14px;opacity:0.8;">
+© 2026 Annam Parabrahma Aaharam. All Rights Reserved.
+</p>
+
+</div>
+  
+</body>
+
+</html>

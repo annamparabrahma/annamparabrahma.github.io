@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Annam Parabrahma Aaharam promotes healthier families, empowered farmers and conscious food choices through purity, tradition and devotion.">
+  
+<title>Annam Parabrahma Aaharam</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+section{
+max-width:1400px;
+margin:auto;
+}
+
+#story,
+#philosophy{
+padding:80px 8%;
+max-width:900px;
+margin:auto;
+}
+
+#story p{
+font-size:18px;
+margin-bottom:24px;
+}
+  
+#philosophy p{
+font-size:18px;
+margin-bottom:24px;
+}
+
+body{
+font-family:'Poppins', sans-serif;
+background:#f8f3e7;
+color:#333;
+line-height:1.8;
+}
+.vision-mission{
+padding:80px 8%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+background:#fdfaf3;
+}
+
+.vm-card{
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+}
+
+.vm-card h2{
+color:#2E5D34;
+margin-bottom:25px;
+font-size:38px;
+}
+
+.vm-card p{
+font-size:20px;
+}
+
+.values{
+padding:80px 8%;
+background:white;
+}
+
+.values-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.value-card{
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.value-card h3{
+color:#2E5D34;
+margin-bottom:15px;
+font-size:26px;
+}
+
+.value-card p{
+font-size:18px;
+}
+
+.offerings{
+padding:80px 8%;
+background:#f8f3e7;
+}
+
+.offerings-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.offering-card{
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+text-align:center;
+transition:all 0.3s ease;
+}
+
+.offering-card:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 30px rgba(0,0,0,0.12);
+}
+
+.offering-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:12px;
+margin-bottom:20px;
+}
+
+.offering-card h3{
+font-size:24px;
+color:#2E5D34;
+margin-bottom:15px;
+}
+
+.why-choose{
+padding:80px 8%;
+background:#f4f9f4;
+}
+
+.why-cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.why-card{
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+transition:all 0.3s ease;
+height:100%;
+}
+
+.why-card:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 30px rgba(0,0,0,0.12);
+}
+
+.why-card h4{
+font-size:24px;
+color:#2E5D34;
+margin-bottom:15px;
+}
+
+.why-card p{
+font-size:18px;
+line-height:1.7;
+}
+  
+.why-summary{
+margin-top:50px;
+background:#eef7ee;
+padding:40px;
+border-radius:15px;
+border-left:6px solid #2E5D34;
+}
+
+.why-summary p{
+font-size:20px;
+margin-bottom:18px;
+line-height:1.8;
+}
+  
+.why-box{
+background:#eef7ee;
+padding:40px;
+border-radius:15px;
+border-left:6px solid #2E5D34;
+}
+
+.why-box p{
+font-size:20px;
+margin-bottom:20px;
+}
+
+.contact-section{
+padding:80px 8%;
+background:#f8f3e7;
+text-align:center;
+}
+
+.contact-section p{
+font-size:20px;
+margin-bottom:20px;
+}
+
+.trust-banner{
+padding:90px 10%;
+text-align:center;
+background:#2E5D34;
+color:white;
+}
+
+.trust-banner h2{
+font-size:42px;
+max-width:1000px;
+margin:auto;
+line-height:1.4;
+font-weight:600;
+letter-spacing:0.5px;
+}
+  
+.navbar{
+position:sticky;
+top:0;
+background:white;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+z-index:1000;
+border-bottom:1px solid rgba(0,0,0,0.05);
+backdrop-filter:blur(10px);
+}
+
+.navbar h2{
+color:#2E5D34;
+font-size:24px;
+font-weight:600;
+}
+
+.navbar ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+.navbar a{
+text-decoration:none;
+color:#333;
+font-weight:bold;
+transition:all 0.3s ease;
+}
+
+.navbar a:hover{
+color:#2E5D34;
+}
+
+.hero{
+min-height:60vh;
+background:linear-gradient(135deg,#1F4425,#2E5D34,#6FA35C);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:50px 20px;
+color:white;
+position:relative;
+overflow:hidden;
+}
+
+.logo{
+width:220px;
+margin-bottom:25px;
+}
+
+.hero h1{
+font-size:50px;
+font-weight:700;
+letter-spacing:2px;
+margin-bottom:20px;
+}
+
+.tagline{
+font-size:24px;
+margin-bottom:30px;
+font-weight:500;
+letter-spacing:1px;
+}
+
+.description{
+max-width:800px;
+font-size:20px;
+line-height:1.9;
+margin-bottom:45px;
+opacity:0.95;
+}
+
+.buttons{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.btn{
+background:#C8A45D;
+color:black;
+padding:15px 32px;
+border-radius:10px;
+text-decoration:none;
+font-weight:600;
+transition:all 0.3s ease;
+}
+
+.btn-secondary{
+background:white;
+color:#2E5D34;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+.footer{
+background:linear-gradient(135deg,#1F4425,#2E5D34);
+color:white;
+padding:30px 8% 15px;
+}
+
+.footer-content{
+max-width:1400px;
+margin:auto;
+}
+
+.footer h2{
+font-size:28px;
+margin-bottom:10px;
+text-align:center;
+}
+
+.footer-tagline{
+font-size:18px;
+opacity:0.9;
+margin-bottom:10px;
+text-align:center;
+}
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+margin-bottom:40px;
+}
+
+.footer h3{
+margin-bottom:15px;
+color:#C8A45D;
+}
+
+.footer a{
+color:white;
+text-decoration:none;
+}
+
+.footer a:hover{
+color:#C8A45D;
+}
+
+.footer hr{
+border:none;
+height:1px;
+background:rgba(255,255,255,0.2);
+margin:15px 0;
+}
+
+.copyright{
+text-align:center;
+opacity:0.7;
+font-size:13px;
+}
+  
+@media(max-width:768px){
+
+.trust-banner h2{
+font-size:28px;
+line-height:1.4;
+}
+
+.hero h1{
+font-size:22px !important;
+line-height:1.4;
+letter-spacing:1px;
+}
+
+.logo{
+width:120px;
+margin-bottom:15px;
+}
+
+.hero{
+padding:40px 20px;
+min-height:auto;
+}
+
+.tagline{
+font-size:18px;
+line-height:1.5;
+}
+
+.description{
+font-size:16px;
+line-height:1.7;
+}
+
+.navbar{
+flex-direction:column;
+gap:10px;
+}
+
+.navbar h2{
+font-size:18px;
+}
+
+.navbar ul{
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.navbar a{
+font-size:15px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<h2>
+<a href="#" style="text-decoration:none;color:#2E5D34;">
+Annam Parabrahma Aaharam
+</a>
+</h2>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#story">Story</a></li>
+<li><a href="#why-annam">Our Name</a></li>
+<li><a href="#offerings">Offerings</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<img src="logo.png" class="logo" alt="Annam Parabrahma Logo">
+
+<h1>ANNAM PARABRAHMA AAHARAM</h1>
+
+<p class="tagline">
+Feeding The Soul, Not Just The Body
+</p>
+
+<p class="description">
+Building trust between nature, farmers and families through purity, tradition and devotion.
+</p>
+
+<div class="buttons">
+
+<a href="#story" class="btn">
+Explore Our Journey
+</a>
+
+<a href="#offerings" class="btn btn-secondary">
+Categories We Are Building
+</a>
+
+</div>
+
+</section>
+
+<section id="story" style="background:#f8f3e7;">
+
+<h2 style="color:#2E5D34; font-size:40px; margin-bottom:40px;">
+Our Story
+</h2>
+
+<p>
+Annam Parabrahma Aaharam was born from a simple concern — the growing distance between people and the food they consume every day.
+</p>
+
+<p>
+In today's world, many families are becoming increasingly conscious of their health and wellbeing. At the same time, questions around food quality, farming practices and long-term sustainability continue to grow.
+</p>
+
+<p>
+We often ask ourselves a simple question:
+</p>
+
+<div style="
+margin:50px 0;
+padding:25px;
+background:white;
+border-radius:15px;
+text-align:center;
+box-shadow:0 12px 35px rgba(0,0,0,0.10);
+">
+
+<p style="
+font-size:28px;
+color:#2E5D34;
+font-weight:600;
+line-height:1.5;
+">
+"If food is meant to nourish life, should it not be chosen with greater care?"
+</p>
+
+</div>
+
+<p>
+This question became the inspiration behind Annam Parabrahma Aaharam.
+</p>
+
+<p>
+We believe that healthy families, empowered farmers and a healthier planet begin with better food choices.
+</p>
+
+<p>
+Our journey is not merely about offering products.
+</p>
+
+<p>
+It is about nurturing trust, supporting positive change and contributing to a healthier future for generations to come.
+</p>
+
+<div style="margin-top:40px; background:white; padding:30px; border-left:6px solid #2E5D34; border-radius:10px; font-size:22px;">
+
+Food should not merely fill our plates — it should nourish our lives.
+
+</div>
+
+</section>
+<section id="why-annam" style="background:#fdfaf3;padding:50px 8%;max-width:900px;margin:auto;">
+
+<h2 style="color:#2E5D34;font-size:36px;margin-bottom:40px;">
+The Meaning Behind Annam Parabrahma Aaharam
+</h2>
+
+<div style="
+margin:50px 0;
+padding:25px;
+background:white;
+border-radius:15px;
+text-align:center;
+box-shadow:0 12px 35px rgba(0,0,0,0.10);
+">
+
+<p style="
+font-size:28px;
+color:#2E5D34;
+font-weight:600;
+line-height:1.5;
+margin:0;
+">
+"Annam Parabrahma Swaroopam" — Food is sacred.
+</p>
+
+</div>
+
+<p>
+This simple belief reminds us that food is far more than something we consume every day. It is what nourishes us, brings families together and supports life itself.
+</p>
+
+<p>
+Behind every meal is the gift of nature, the effort of farmers and the wisdom passed down through generations.
+</p>
+
+<p>
+The name Annam Parabrahma Aaharam reflects our belief that food deserves care, gratitude and respect.
+</p>
+
+<p>
+It reminds us to think about where our food comes from, how it is grown and the impact it has on our health, our farmers, our communities and our environment.
+</p>
+
+<p>
+We believe food choices become more meaningful when we understand the connection between nature, farmers and families.
+</p>
+
+<p>
+At its heart, Annam Parabrahma Aaharam is about encouraging better food choices and creating greater awareness about the relationship between food, health and nature.
+</p>
+
+<div style="margin-top:40px;background:#eef7ee;padding:30px;border-left:6px solid #2E5D34;border-radius:10px;font-size:22px;">
+
+For us, food is not merely a product.<br><br>
+
+It is nourishment.<br>
+It is responsibility.<br>
+It is gratitude.<br>
+It is life.<br><br>
+
+Because food should not merely fill our plates — it should nourish our lives.
+
+</div>
+
+</section>
+<section id="philosophy" style="background:#ffffff;">
+
+<h2 style="color:#2E5D34; font-size:40px; margin-bottom:40px;">
+Our Philosophy
+</h2>
+
+<div style="
+margin:50px 0;
+padding:25px;
+background:#eef7ee;
+border-radius:15px;
+text-align:center;
+box-shadow:0 12px 35px rgba(0,0,0,0.10);
+">
+
+<p style="
+font-size:28px;
+color:#2E5D34;
+font-weight:600;
+line-height:1.5;
+margin:0;
+">
+Food is one of the few things that connects every living being.
+</p>
+
+</div>
+
+<p>
+It connects nature to farmers, farmers to families and families to future generations.
+</p>
+
+<p>
+Yet somewhere along the way, many of us have become disconnected from the journey of our food — how it is grown, where it comes from and the impact it has on our health, our communities and our environment.
+</p>
+
+<p>
+At Annam Parabrahma Aaharam, we believe food deserves greater thought, greater care and greater respect.
+</p>
+
+<p>
+We support natural and organic farming practices because they encourage a closer relationship with nature and a more sustainable way of growing food. We also recognise that such farming often requires greater effort and can many times result in comparatively lower yields than conventional farming practices. As a result, the effort, care and responsibility involved in growing food are not always reflected by its price alone.
+</p>
+  
+<p>
+For us, choosing better food is not about perfection.
+</p>
+
+<p>
+It is about making conscious choices.
+</p>
+
+<p>
+Choices that support healthier families.
+</p>
+
+<p>
+Choices that encourage responsible farming.
+</p>
+
+<p>
+Choices that contribute to a healthier planet.
+</p>
+
+<p>
+We do not believe in unrealistic promises.
+</p>
+
+<p>
+We believe in honesty.
+</p>
+
+<p>
+We believe in responsibility.
+</p>
+
+<p>
+We believe that every better choice matters.
+</p>
+
+<p>
+Every meal is an opportunity to make a better choice — for ourselves, for our farmers and for the world we leave behind.
+</p>
+
+<div style="margin-top:40px; background:#eef7ee; padding:30px; border-left:6px solid #2E5D34; border-radius:10px; font-size:22px;">
+
+Healthy families, empowered farmers and a healthier planet begin with better food choices.
+
+</div>
+
+</section>
+
+<section class="vision-mission">
+
+<div class="vm-card">
+
+<h2>Our Vision</h2>
+
+<p>
+To contribute to a future where families eat better, farmers thrive, communities flourish and nature is respected for generations to come.
+</p>
+
+<p style="
+color:#2E5D34;
+font-weight:600;
+font-size:24px;
+line-height:1.8;
+margin-top:30px;
+">
+Healthy families. Empowered farmers.<br>
+Thriving communities. A healthier planet.
+</p>
+
+</div>
+
+<div class="vm-card">
+
+<h2>Our Mission</h2>
+
+<p>
+Our mission is to make better food choices more accessible to families and communities while supporting farmers who are committed to responsible and sustainable farming practices.
+</p>
+
+<br>
+
+<p>
+Through thoughtfully sourced vegetables, fruits, groceries and traditional foods, we aim to encourage greater awareness about the connection between food, health and nature.
+</p>
+
+<br>
+
+<p>
+Guided by the values of purity, tradition and devotion, we strive to build trust through honesty, transparency and responsibility, making every offering a step towards a healthier and more sustainable future.
+</p>
+
+<p style="
+color:#2E5D34;
+font-weight:bold;
+margin-top:30px;
+">
+Creating awareness. Supporting farmers. Nourishing families and communities.
+</p>
+
+</div>
+
+</section>
+
+<section class="values">
+
+<h2 style="color:#2E5D34;font-size:40px;margin-bottom:20px;">
+Our Values
+</h2>
+
+<div class="values-grid">
+
+<div class="value-card">
+<h3>Purity</h3>
+<p>
+We strive to offer products that reflect care, quality and authenticity.
+</p>
+</div>
+
+<div class="value-card">
+<h3>Tradition</h3>
+<p>
+We respect the wisdom and practices that have nourished generations before us.
+</p>
+</div>
+
+<div class="value-card">
+<h3>Devotion</h3>
+<p>
+We serve every family and community with sincerity, responsibility and care.
+</p>
+</div>
+
+<div class="value-card">
+<h3>Integrity</h3>
+<p>
+We believe trust is built through honesty, transparency and doing what is right.
+</p>
+</div>
+
+<div class="value-card">
+<h3>Sustainability</h3>
+<p>
+We support choices and practices that contribute to a healthier future for people, farmers and nature.
+</p>
+</div>
+
+<div class="value-card">
+<h3>Community</h3>
+<p>
+We believe positive change happens when families, farmers and communities grow together.
+</p>
+</div>
+
+</div>
+
+<div style="margin-top:40px;background:#eef7ee;padding:30px;border-left:6px solid #2E5D34;border-radius:10px;font-size:22px;">
+
+Purity in what we offer. Integrity in how we serve.
+
+</div>
+
+</section>
+
+<section id="offerings" class="offerings">
+
+<h2 style="color:#2E5D34;font-size:40px;margin-bottom:20px;">
+Our Offerings
+</h2>
+
+<p style="font-size:20px;margin-bottom:20px;">
+Every category we build reflects our belief that better food choices can create a positive impact on families, farmers, communities and the environment.
+</p>
+
+<p style="font-size:20px;">
+Rather than growing quickly, we believe in growing thoughtfully. As we continue our journey, we are carefully developing product categories that align with our values and our vision for healthier families, stronger farming communities and a healthier planet.
+</p>
+
+<h3 style="margin-top:40px;color:#2E5D34;font-size:32px;">
+Categories We Are Building
+</h3>
+
+<div class="offerings-grid">
+
+<a href="vegetables.html" style="text-decoration:none;color:inherit;">
+
+<div class="offering-card">
+
+<img src="images/vegetables.png" alt="Vegetables">
+
+<h3>🥬 Vegetables</h3>
+
+<p>
+Fresh produce sourced with care to support healthier families and communities.
+</p>
+
+<p style="
+margin-top:15px;
+color:#2E5D34;
+font-weight:600;
+">
+Explore Collection →
+</p>
+
+</div>
+
+</a>
+
+<a href="fruits.html" style="text-decoration:none;color:inherit;">
+
+<div class="offering-card">
+
+<img src="images/fruits.png" alt="Fruits">
+
+<h3>🥭 Fruits</h3>
+
+<p>
+Seasonal fruits selected with a focus on quality, freshness and responsible sourcing.
+</p>
+
+<p style="
+margin-top:15px;
+color:#2E5D34;
+font-weight:600;
+">
+Explore Collection →
+</p>
+
+</div>
+
+</a>
+
+<a href="groceries.html" style="text-decoration:none;color:inherit;">
+
+<div class="offering-card">
+
+<img src="images/groceries.png" alt="Natural Groceries">
+
+<h3>🌾 Natural Groceries</h3>
+
+<p>
+Everyday essentials inspired by simplicity, tradition and conscious living.
+</p>
+
+<p style="
+margin-top:15px;
+color:#2E5D34;
+font-weight:600;
+">
+Explore Collection →
+</p>
+
+</div>
+
+</a>
+
+<a href="oils.html" style="text-decoration:none;color:inherit;">
+
+<div class="offering-card">
+
+<img src="images/wood-pressed-oils.png" alt="Wood Pressed Oils">
+
+<h3>🫒 Wood Pressed Oils</h3>
+
+<p>
+Traditional oils prepared using time-honoured methods that respect both quality and heritage.
+</p>
+
+<p style="
+margin-top:15px;
+color:#2E5D34;
+font-weight:600;
+">
+Explore Collection →
+</p>
+
+</div>
+
+</a>
+
+<a href="traditional-foods.html" style="text-decoration:none;color:inherit;">
+
+<div class="offering-card">
+
+<img src="images/traditional-foods.png" alt="Traditional Foods">
+
+<h3>🫙 Traditional Foods</h3>
+
+<p>
+Foods rooted in culture, tradition and generations of wisdom.
+</p>
+
+<p style="
+margin-top:15px;
+color:#2E5D34;
+font-weight:600;
+">
+Explore Collection →
+</p>
+
+</div>
+
+</a>
+
+</div>
+
+<div style="margin-top:40px;background:#eef7ee;padding:30px;border-left:6px solid #2E5D34;border-radius:10px;">
+
+<p style="font-size:22px;font-weight:600;color:#2E5D34;margin-bottom:15px;">
+Building thoughtfully today for a healthier tomorrow.
+</p>
+
+<p style="font-size:18px;line-height:1.8;">
+Our collections are currently being developed and expanded. This website reflects our vision, philosophy and the product categories we plan to bring under Annam Parabrahma Aaharam.
+</p>
+
+</div>
+
+</section>
+
+<section id="food-services" style="padding:60px 8%;background:#fffaf1;text-align:center;">
+
+  <h2 style="color:#2E5D34;font-size:36px;margin-bottom:15px;">
+    Cloud Kitchen & Catering
+  </h2>
+
+  <p style="font-size:19px;max-width:850px;margin:0 auto 30px;">
+    From everyday meals to life's special celebrations, we are preparing
+    food offerings inspired by tradition, nourishment and togetherness.
+  </p>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;max-width:1000px;margin:30px auto;">
+
+    <div style="background:#fff;padding:30px;border-radius:14px;box-shadow:0 5px 15px rgba(0,0,0,0.08);">
+      <h3 style="color:#A34824;font-size:24px;margin-bottom:15px;">
+        Cloud Kitchen
+      </h3>
+      <p>
+        Planned offerings include breakfast, snacks, lunch, dinner,
+        Sattvic food and traditional favourites for everyday needs.
+      </p>
+    </div>
+
+    <div style="background:#fff;padding:30px;border-radius:14px;box-shadow:0 5px 15px rgba(0,0,0,0.08);">
+      <h3 style="color:#A34824;font-size:24px;margin-bottom:15px;">
+        Catering for Celebrations
+      </h3>
+      <p>
+        Planned for weddings, birthdays, family functions, festivals,
+        pooja events, corporate gatherings and community celebrations.
+      </p>
+      <p style="margin-top:12px;font-weight:600;">
+        Proposed minimum: 10 guests
+      </p>
+    </div>
+
+  </div>
+
+  <p style="font-size:18px;font-weight:600;color:#2E5D34;margin:25px 0 15px;">
+    Planning a celebration? Let's talk catering!
+  </p>
+
+  <p style="margin-bottom:20px;">
+    Share your interest with us as we prepare for our launch.
+  </p>
+
+  <a href="https://wa.me/919000112505?text=Hello%2C%20I%20am%20interested%20in%20Annam%20Parabrahma%20Aaharam%20food%20services."
+     target="_blank"
+     rel="noopener noreferrer"
+     style="display:inline-block;background:#A34824;color:white;padding:14px 28px;border-radius:8px;text-decoration:none;font-weight:600;">
+    Share Your Interest on WhatsApp
+  </a>
+
+  <p style="font-size:14px;color:#666;margin-top:20px;">
+    Services are being prepared. Availability will be confirmed after
+    the required food-business authorisation is in place.
+  </p>
+
+</section>
+
+<section class="why-choose">
+
+<h2 style="color:#2E5D34;font-size:40px;margin-bottom:30px;">
+Why Choose Annam Parabrahma Aaharam
+</h2>
+
+<h3 style="font-size:28px;margin-bottom:30px;">
+Because Food Deserves More Than Convenience
+</h3>
+
+<div class="why-cards">
+
+<div class="why-card">
+<h4>🌿 Thoughtfully Sourced</h4>
+<p>
+Food should be chosen with thought, care and responsibility.
+</p>
+</div>
+
+<div class="why-card">
+<h4>👨‍🌾 Farmer Focused</h4>
+<p>
+We support responsible farming while recognising the realities farmers face every day.
+</p>
+</div>
+
+<div class="why-card">
+<h4>🤝 Trust & Transparency</h4>
+<p>
+We value honesty, informed choices and transparency over marketing claims.
+</p>
+</div>
+
+<div class="why-card">
+<h4>🌍 Sustainability</h4>
+<p>
+Healthy families, empowered farmers and a healthier planet are deeply connected.
+</p>
+</div>
+
+<div class="why-card">
+<h4>🙏 Purpose Driven</h4>
+<p>
+Our goal is to build trust between nature, farmers and families for generations to come.
+</p>
+  
+</div>
+
+</div>
+  
+<div class="why-summary">
+
+<p>
+We value honesty over unrealistic promises.
+</p>
+
+<p>
+We support natural and organic farming practices while recognising the realities and challenges farmers face every day.
+</p>
+
+<p>
+We believe informed choices are better than marketing claims.
+</p>
+
+<p>
+Healthy families, empowered farmers and a healthier planet are deeply connected.
+</p>
+
+<p>
+At the heart of everything we do is a simple goal — to build trust between nature, farmers and families.
+</p>
+
+<p>
+We hope to encourage awareness, inspire better choices and contribute to a healthier future for all.
+</p>
+
+</div>
+  
+<div style="margin-top:40px;background:#2E5D34;color:white;padding:30px;border-radius:15px;font-size:24px;text-align:center;">
+
+We are not simply offering products. We are encouraging better choices and meaningful change.
+
+</div>
+
+</section>
+
+<section class="trust-banner">
+
+<h2>
+Building trust between nature, farmers and families.
+</h2>
+
+</section>
+
+<section id="contact" class="contact-section">
+
+<h2 style="color:#2E5D34;font-size:40px;margin-bottom:30px;">
+Let's Grow Together
+</h2>
+
+<p>
+Every meaningful change begins with awareness, grows through conscious choices and flourishes when people come together with a shared purpose.
+</p>
+
+<p>
+Whether you are looking to learn more about our journey, share your thoughts, explore our offerings or simply connect with us, we would be delighted to hear from you.
+</p>
+
+<p>
+The journey towards healthier families, empowered farmers, thriving communities and a healthier planet belongs to all of us.
+</p>
+
+<p>
+Let us take that journey together.
+</p>
+
+<p>
+📱 <a href="tel:+919000112505">
++91 90001 12505
+</a>
+</p>
+
+<p>
+📧 <a href="mailto:annamparabrahma@gmail.com">
+annamparabrahma@gmail.com
+</a>
+</p>
+
+<p>
+📍 Hyderabad, Telangana
+</p>
+
+<div style="margin-top:40px;background:#eef7ee;padding:30px;border-left:6px solid #2E5D34;border-radius:10px;font-size:22px;">
+
+Together, small choices can create meaningful change.
+
+</div>
+
+</section>
+
+<footer class="footer">
+<div class="footer-content">
+
+<h2>ANNAM PARABRAHMA AAHARAM</h2>
+
+<p class="footer-tagline">
+Feeding The Soul, Not Just The Body
+</p>
+<p style="
+max-width:700px;
+margin:20px auto;
+text-align:center;
+font-size:16px;
+">
+Building trust between nature, farmers and families through purity, tradition and devotion.
+</p>
+
+<div style="
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:30px;
+font-size:18px;
+">
+
+<a href="https://wa.me/919000112505" target="_blank">WhatsApp</a>
+
+<span>•</span>
+
+<a href="https://instagram.com/annamparabrahmaaaharam" target="_blank">Instagram</a>
+
+<span>•</span>
+
+<a href="https://www.youtube.com/@AnnamParabrahmaAaharam" target="_blank">YouTube</a>
+
+</div>
+
+<hr>
+
+<p class="copyright">
+© 2026 Annam Parabrahma Aaharam. All Rights Reserved.
+</p>
+</div>
+
+</footer>
+
+<a href="https://wa.me/919000112505"
+target="_blank"
+style="
+position:fixed;
+bottom:20px;
+right:20px;
+width:50px;
+height:50px;
+background:#25D366;
+color:white;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:20px;
+text-decoration:none;
+box-shadow:0 4px 15px rgba(0,0,0,0.2);
+z-index:9999;
+">
+💬
+</a>
+
+</body>
+
+</html>

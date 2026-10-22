@@ -81,6 +81,51 @@ section{padding:76px 0}.section-heading{max-width:760px;margin:0 auto 38px;text-
 @media(max-width:700px){.hero-layout{grid-template-columns:1fr;gap:24px}.hero-logo-panel{max-width:280px;margin:0 auto}.hero-logo-panel img{max-width:250px}.hero-text{text-align:center}.hero-actions{justify-content:center}.hero-note{max-width:540px;margin-left:auto;margin-right:auto}.container{width:min(100% - 28px,1140px)}section{padding:56px 0}.nav-inner{gap:10px}.brand img{width:64px;height:64px}.brand-name{font-size:18px}.brand-tag{font-size:10px}.nav-links{gap:13px}.nav-links a{font-size:12px}.hero{padding:68px 0}.hero-copy{font-size:15px}.hero-actions .button{width:100%}.service-grid,.contact-panel{grid-template-columns:1fr}.trust-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.occasion-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.vision-points{grid-template-columns:1fr}.service-card{padding:25px}.contact-panel{padding:25px}.contact-details strong{display:block}.footer-main{align-items:flex-start;flex-direction:column}}
 @media(max-width:420px){.brand img{width:54px;height:54px}.brand-name{font-size:16px}.brand-tag{font-size:9px}.nav-cta{padding:9px 11px;font-size:12px}.trust-grid{grid-template-columns:1fr}}
 
+/* Food promise cards centred beneath the existing six cards */
+.trust-promise-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  max-width: 680px;
+  margin: 20px auto 0;
+}
+
+.trust-promise-card {
+  padding: 25px;
+  border-radius: 16px;
+  background: #fffdf8;
+  border-top: 3px solid var(--gold);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.trust-promise-card h3 {
+  color: var(--green);
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.trust-promise-card p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+@media(max-width:420px) {
+  .trust-promise-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .trust-promise-card {
+    padding: 16px 10px;
+  }
+
+  .trust-promise-card h3 {
+    font-size: 15px;
+  }
+}
+ 
+
 /* Mobile header correction: keep desktop appearance unchanged */
 .menu-toggle{display:none}
 @media(max-width:700px){
@@ -169,9 +214,23 @@ section{padding:76px 0}.section-heading{max-width:760px;margin:0 auto 38px;text-
     <article class="trust-card"><h3>❤️ Made for Togetherness</h3><p>Food that helps families, friends and communities come together.</p></article>
     <article class="trust-card"><h3>👩‍🍳 Careful Preparation</h3><p>Attention to preparation, presentation and the details that make a meal enjoyable.</p></article>
     <article class="trust-card"><h3>🥗 Thoughtful Menu Planning</h3><p>Discuss food preferences, guest numbers and suitable menu options for your occasion.</p></article>
+    
     <article class="trust-card"><h3>🗓️ Dependable Coordination</h3><p>Clear confirmations and careful coordination around agreed requirements and timings.</p></article>
   </div>
+
+  <div class="trust-promise-row">
+    <article class="trust-promise-card">
+      <h3>🌿 No Added Preservatives</h3>
+      <p>Thoughtful choices in the ingredients we use.</p>
+    </article>
+
+    <article class="trust-promise-card">
+      <h3>🎨 No Added Artificial Colours</h3>
+      <p>Keeping our food preparation true to our food philosophy.</p>
+    </article>
+  </div>
 </div></section>
+
 
 <section class="about" id="about"><div class="container"><div class="about-panel">
   <span class="eyebrow" style="color:#A34824">The heart behind our name</span><h2>Our Vision: Nourishing Life, Connecting Communities</h2>

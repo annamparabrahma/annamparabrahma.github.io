@@ -27,7 +27,7 @@ header{background:rgba(251,249,243,.96);position:sticky;top:0;z-index:10;border-
 .marquee-inner{display:flex;justify-content:space-between;align-items:center;gap:14px 24px;flex-wrap:wrap;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
 .marquee span{white-space:nowrap}
 .marquee span:before{content:'✳';margin-right:12px;font-size:12px}
-section{padding:92px 0}.section-top{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:38px}.eyebrow{color:var(--clay);font-size:10px;font-weight:700;letter-spacing:2.3px;text-transform:uppercase}.section-top h2,.story h2,.cta-panel h2{font-family:var(--serif);font-weight:500;color:var(--forest);font-size:clamp(34px,4.3vw,53px);line-height:1.12;margin:12px 0 0;letter-spacing:-.7px}.section-top p{max-width:380px;color:var(--muted);font-size:13px;margin:0}.services{background:var(--cream)}.service-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.service{position:relative;min-height:360px;overflow:hidden;background:var(--forest);color:white;display:flex;align-items:end;text-decoration:none}.service img{position:absolute;width:100%;height:100%;object-fit:cover;inset:0;opacity:.66;transition:transform .6s}.service:hover img{transform:scale(1.04)}.service:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(12,28,19,.95),rgba(12,28,19,.05) 78%)}.service-content{position:relative;z-index:1;padding:30px}.service-number{color:var(--gold);font-size:10px;letter-spacing:2px}.service h3{font-family:var(--serif);font-size:36px;font-weight:500;margin:8px 0}.service p{color:#e0e6df;font-size:13px;max-width:390px}.service .more{font-size:11px;color:var(--gold);font-weight:700;letter-spacing:1px;text-transform:uppercase}
+section{padding:92px 0}.section-top{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:38px}.eyebrow{color:var(--clay);font-size:10px;font-weight:700;letter-spacing:2.3px;text-transform:uppercase}.section-top h2,.story h2,.cta-panel h2{font-family:var(--serif);font-weight:500;color:var(--forest);font-size:clamp(34px,4.3vw,53px);line-height:1.12;margin:12px 0 0;letter-spacing:-.7px}.section-top p{max-width:380px;color:var(--muted);font-size:13px;margin:0}.services{background:var(--cream)}.service-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.service{position:relative;min-height:420px;overflow:hidden;background:var(--forest);color:white;display:flex;align-items:end;text-decoration:none}.service img{position:absolute;width:100%;height:100%;object-fit:cover;inset:0;opacity:.66;transition:transform .6s}.service:hover img{transform:scale(1.04)}.service:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(12,28,19,.95),rgba(12,28,19,.05) 78%)}.service-content{position:relative;z-index:1;padding:30px}.service-number{color:var(--gold);font-size:10px;letter-spacing:2px}.service h3{font-family:var(--serif);font-size:36px;font-weight:500;margin:8px 0}.service p{color:#e0e6df;font-size:13px;max-width:390px}.service .more{font-size:11px;color:var(--gold);font-weight:700;letter-spacing:1px;text-transform:uppercase}
 .philosophy{background:var(--paper)}.philosophy-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}.philosophy-intro h2{font-family:var(--serif);font-weight:500;color:var(--forest);font-size:clamp(36px,4.3vw,54px);line-height:1.1;margin:16px 0}.philosophy-intro p{color:var(--muted);font-size:14px}.values{border-top:1px solid var(--line)}.value{display:grid;grid-template-columns:54px 1fr;gap:18px;padding:24px 0;border-bottom:1px solid var(--line)}.value-no{font-family:var(--serif);font-size:22px;color:var(--clay)}.value h3{font-family:var(--serif);font-size:24px;font-weight:500;color:var(--forest);margin:0 0 5px}.value p{font-size:13px;color:var(--muted);margin:0;max-width:550px}
 .ritual{background:#e8e0d0}.ritual-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}.ritual-image{height:480px;position:relative}.ritual-image img{width:100%;height:100%;object-fit:cover}.ritual-image:after{content:'';position:absolute;inset:12px;border:1px solid rgba(255,255,255,.8)}.ritual-copy blockquote{font-family:var(--serif);font-size:clamp(29px,3.5vw,43px);line-height:1.22;color:var(--forest);margin:18px 0}.ritual-copy p{color:#59645a;font-size:14px}.signature{font-family:var(--serif);font-style:italic;color:var(--clay);font-size:18px;margin-top:24px}
 .occasions{background:var(--forest);color:var(--cream)}.occasions .section-top h2{color:var(--cream)}.occasions .section-top p{color:#c1cbbf}.occasion-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.2);border-left:1px solid rgba(255,255,255,.2)}.occasion{padding:25px 22px;min-height:150px;border-right:1px solid rgba(255,255,255,.2);border-bottom:1px solid rgba(255,255,255,.2)}.occasion span{font-size:10px;color:var(--gold);letter-spacing:1.5px}.occasion h3{font-family:var(--serif);font-size:21px;font-weight:500;margin:13px 0 4px}.occasion p{font-size:11px;color:#c1cbbf;margin:0}
@@ -60,10 +60,45 @@ section{padding:92px 0}.section-top{display:flex;align-items:end;justify-content
     <span>Food for Togetherness</span>
   </div>
 </div>
-<section class="services" id="services"><div class="wrap"><div class="section-top"><div><div class="eyebrow">Two ways to share good food</div><h2>Made for your table.<br>Made for your moments.</h2></div><p>From family meals to gatherings that bring everyone together, choose the way we can serve you.</p></div><div class="service-grid">
-<a class="service" href="current-menu.html"><img src="assets/serving-dal.jpg" alt="Vegetarian food prepared for a family meal"><div class="service-content"><span class="service-number">01 / EVERYDAY AAHARAM</span><h3>Cloud Kitchen</h3><p>Explore our menu and enquire about thoughtfully prepared vegetarian food for your home.</p><span class="more">Discover the menu ↗</span></div></a>
-<a class="service" href="catering-menu.html"><img src="assets/catering-table.jpg" alt="Freshly prepared food for a shared gathering"><div class="service-content"><span class="service-number">02 / SHARED CELEBRATIONS</span><h3>Vegetarian Catering</h3><p>Plan a menu around your occasion, guest count and preferences with our team.</p><span class="more">Explore catering ↗</span></div></a>
-</div></div></section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="section-top">
+      <div>
+        <div class="eyebrow">Two ways to share good food</div>
+        <h2>Made for your table.<br>Made for your moments.</h2>
+      </div>
+      <p>From everyday family meals to special gatherings, we bring thoughtful vegetarian food to the moments that bring people together.</p>
+    </div>
+
+    <div class="service-grid">
+      <a class="service" href="current-menu.html">
+        <img src="cloud-kitchen.png"
+             alt="Home-style vegetarian meals, rice, curries and Indian breads">
+        <div class="service-content">
+          <span class="service-number">01 / EVERYDAY AAHARAM</span>
+          <h3>Cloud Kitchen</h3>
+          <p><strong>Everyday comfort, prepared with care.</strong></p>
+          <p>From wholesome vegetarian lunch meals to comforting dinner combinations of chapati, phulka or jowar roti with dal and curry, discover food made for your family table.</p>
+          <span class="more">Explore Our Menu ↗</span>
+        </div>
+      </a>
+
+      <a class="service" href="catering-menu.html">
+        <img src="vegetarian-catering.png"
+             alt="Vegetarian catering spread for family functions and celebrations">
+        <div class="service-content">
+          <span class="service-number">02 / SHARED CELEBRATIONS</span>
+          <h3>Vegetarian Catering</h3>
+          <p><strong>Thoughtfully served for every occasion.</strong></p>
+          <p>From traditional breakfasts and festive meals to weddings, poojas, family functions and community gatherings, we help you plan a vegetarian menu around your occasion, guest count and preferences.</p>
+          <span class="more">Plan Your Catering ↗</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
 <section class="philosophy" id="philosophy"><div class="wrap philosophy-grid"><div class="philosophy-intro"><div class="eyebrow">The way we believe food should be made</div><h2>Good food starts with the care you cannot always see.</h2><p>We believe the care that goes into a meal matters as much as the food itself. It guides the choices we make, from preparing ingredients to serving each dish.</p></div><div class="values">
 <div class="value"><div class="value-no">01</div><div><h3>Homemade Goodness</h3><p>Homemade masalas and ghee, thoughtfully selected ingredients, and traditional preparation methods—guided by our belief that good food begins with care.</p></div></div>
 <div class="value"><div class="value-no">02</div><div><h3>Cleanliness in Every Step</h3><p>Attention to clean utensils, careful food handling and cleanliness throughout preparation.</p></div></div>

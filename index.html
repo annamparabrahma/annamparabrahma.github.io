@@ -126,11 +126,39 @@ section{padding:92px 0}.section-top{display:flex;align-items:end;justify-content
 .commitment-closing .commitment-signature{font-family:var(--serif);font-size:19px;font-style:italic;color:var(--clay);margin-top:18px}
 .commitment-closing .commitment-last{font-size:12px;color:var(--forest);font-weight:600;margin-top:12px}
 .claims,.claim{display:none}.story{background:var(--paper)}.story-grid{display:grid;grid-template-columns:1fr .85fr;gap:70px;align-items:center}.story p{font-size:14px;color:var(--muted)}.story-side{background:var(--cream);padding:38px;position:relative}.story-side:before{content:'';position:absolute;inset:10px;border:1px solid var(--gold);pointer-events:none}.story-side blockquote{position:relative;font-family:var(--serif);font-size:30px;line-height:1.25;color:var(--forest);margin:0}.story-side small{position:relative;display:block;margin-top:20px;font-size:10px;text-transform:uppercase;letter-spacing:1.7px;color:var(--clay)}
-.cta{padding:0 0 90px;background:var(--paper)}.cta-panel{background:var(--clay);color:white;padding:46px;display:flex;align-items:center;justify-content:space-between;gap:28px}.cta-panel h2{color:white;max-width:620px}.cta-panel p{color:#f3ded5;font-size:13px;max-width:540px}.cta-panel .btn{border-color:#f4e5d9;white-space:nowrap}.cta-panel .btn-gold{background:var(--cream);color:var(--forest)}footer{background:#111f18;color:#e8e4d8;padding:40px 0 20px}.footer-top{display:flex;justify-content:space-between;gap:24px;align-items:center}.footer-brand{display:flex;align-items:center;gap:13px}.footer-brand img{width:58px;height:58px;object-fit:contain;background:#f8f3e7;border-radius:50%;padding:4px}.footer-brand strong{font-family:var(--serif);font-size:20px;font-weight:500}.footer-brand small{display:block;color:#c6b58f;font-size:10px;margin-top:3px}.footer-links{display:flex;flex-wrap:wrap;gap:20px}.footer-links a{font-size:11px;text-decoration:none;color:#e8e4d8}.contact-line{border-top:1px solid rgba(255,255,255,.15);margin-top:26px;padding-top:18px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:11px;color:#c2c9c1}.contact-line a{color:#e8d6ad;text-decoration:none}.float{position:fixed;right:20px;bottom:20px;z-index:20;background:#27734a;color:white;text-decoration:none;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-size:23px;box-shadow:0 8px 25px #0003}
+.cta{padding:0 0 90px;background:var(--paper)}.cta-panel{background:var(--clay);color:white;padding:46px;display:flex;align-items:center;justify-content:space-between;gap:28px}.cta-panel h2{color:white;max-width:620px}.cta-panel p{color:#f3ded5;font-size:13px;max-width:540px}.cta-panel .btn{border-color:#f4e5d9;white-space:nowrap}.cta-panel .btn-gold{background:var(--cream);color:var(--forest)}footer{background:#111f18;color:#e8e4d8;padding:40px 0 20px}.footer-top{
+  display:grid;
+  grid-template-columns:1.2fr 1fr 1.2fr;
+  gap:30px;
+  align-items:start;
+}
+.footer-links,
+.footer-contact{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:12px;
+}
+.footer-contact strong{
+  color:var(--gold);
+  font-family:var(--serif);
+  font-size:18px;
+  font-weight:500;
+}
+.footer-contact span,
+.footer-contact a{
+  font-size:11px;
+  overflow-wrap:anywhere;
+}.footer-brand{display:flex;align-items:center;gap:13px}.footer-brand img{width:58px;height:58px;object-fit:contain;background:#f8f3e7;border-radius:50%;padding:4px}.footer-brand strong{font-family:var(--serif);font-size:20px;font-weight:500}.footer-brand small{display:block;color:#c6b58f;font-size:10px;margin-top:3px}.footer-links{display:flex;flex-wrap:wrap;gap:20px}.footer-links a{font-size:11px;text-decoration:none;color:#e8e4d8}.contact-line{border-top:1px solid rgba(255,255,255,.15);margin-top:26px;padding-top:18px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:11px;color:#c2c9c1}.contact-line a{color:#e8d6ad;text-decoration:none}.float{position:fixed;right:20px;bottom:20px;z-index:20;background:#27734a;color:white;text-decoration:none;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-size:23px;box-shadow:0 8px 25px #0003}
 @media(max-width:850px){.links{gap:14px}.links a{font-size:11px}.hero-grid{gap:30px;min-height:540px}.hero-visual{min-height:420px}.story-grid{gap:35px}.occasion-grid{grid-template-columns:repeat(2,1fr)}.trust-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:650px){.philosophy-values{grid-template-columns:1fr;column-gap:0}.philosophy-intro{margin-bottom:26px}.philosophy-intro .philosophy-lead{font-size:20px}.wrap{width:calc(100% - 30px)}.topline{font-size:10px;letter-spacing:.8px;padding:9px 12px;line-height:1.6}.nav{min-height:75px;flex-wrap:wrap}.brand img{width:48px;height:48px}.brand-name{font-size:17px}.brand-tag{font-size:9px}.menu{display:block}.links{display:none;order:4;width:100%;padding:0 0 16px;flex-direction:column;align-items:stretch;gap:0}.links.open{display:flex}.links a{padding:10px 0;border-top:1px solid var(--line)}.links .nav-cta{margin-top:8px;text-align:center}.hero-grid{grid-template-columns:1fr;padding-top:46px;padding-bottom:45px;gap:26px}.hero h1{font-size:54px}.hero-visual{min-height:340px}.hero-photo{inset:0 18px 18px 0;width:calc(100% - 18px);height:calc(100% - 18px)}.photo-caption{width:190px;padding:14px 16px}.photo-caption strong{font-size:16px}.marquee-inner{justify-content:center;gap:12px 16px}.marquee span{font-size:9px;letter-spacing:1px}section{padding:62px 0}.section-top{display:block}.section-top p{margin-top:14px}.service-grid,.ritual-grid,.story-grid{grid-template-columns:1fr;gap:30px}.service{min-height:400px}.philosophy-intro h2{font-size:43px}.ritual-image{height:330px;order:2}.ritual-copy blockquote{font-size:34px}.occasion-grid{grid-template-columns:1fr 1fr}.occasion{padding:18px 14px;min-height:145px}.occasion h3{font-size:18px}.trust-grid{grid-template-columns:1fr 1fr;gap:8px}.trust-card{padding:16px}.trust-card h3{font-size:18px}.cta{padding-bottom:60px}.cta-panel{padding:28px;display:block}.cta-panel .btn{margin-top:12px;width:100%}.footer-top{align-items:flex-start;flex-direction:column}.footer-links{gap:14px}.story-side{padding:30px}.story-side blockquote{font-size:26px}}
-@media(max-width:380px){.hero h1{font-size:46px}.occasion-grid,.trust-grid{grid-template-columns:1fr}.actions .btn{width:100%}}
-</style>
+@media(max-width:650px){.philosophy-values{grid-template-columns:1fr;column-gap:0}.philosophy-intro{margin-bottom:26px}.philosophy-intro .philosophy-lead{font-size:20px}.wrap{width:calc(100% - 30px)}.topline{font-size:10px;letter-spacing:.8px;padding:9px 12px;line-height:1.6}.nav{min-height:75px;flex-wrap:wrap}.brand img{width:48px;height:48px}.brand-name{font-size:17px}.brand-tag{font-size:9px}.menu{display:block}.links{display:none;order:4;width:100%;padding:0 0 16px;flex-direction:column;align-items:stretch;gap:0}.links.open{display:flex}.links a{padding:10px 0;border-top:1px solid var(--line)}.links .nav-cta{margin-top:8px;text-align:center}.hero-grid{grid-template-columns:1fr;padding-top:46px;padding-bottom:45px;gap:26px}.hero h1{font-size:54px}.hero-visual{min-height:340px}.hero-photo{inset:0 18px 18px 0;width:calc(100% - 18px);height:calc(100% - 18px)}.photo-caption{width:190px;padding:14px 16px}.photo-caption strong{font-size:16px}.marquee-inner{justify-content:center;gap:12px 16px}.marquee span{font-size:9px;letter-spacing:1px}section{padding:62px 0}.section-top{display:block}.section-top p{margin-top:14px}.service-grid,.ritual-grid,.story-grid{grid-template-columns:1fr;gap:30px}.service{min-height:400px}.philosophy-intro h2{font-size:43px}.ritual-image{height:330px;order:2}.ritual-copy blockquote{font-size:34px}.occasion-grid{grid-template-columns:1fr 1fr}.occasion{padding:18px 14px;min-height:145px}.occasion h3{font-size:18px}.trust-grid{grid-template-columns:1fr 1fr;gap:8px}.trust-card{padding:16px}.trust-card h3{font-size:18px}.cta{padding-bottom:60px}.cta-panel{padding:28px;display:block}.cta-panel .btn{margin-top:12px;width:100%}.footer-top{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1/-1}.footer-links{gap:14px}.story-side{padding:30px}.story-side blockquote{font-size:26px}}
+@media(max-width:380px){
+  .hero h1{font-size:46px}
+  .occasion-grid,.trust-grid{grid-template-columns:1fr}
+  .actions .btn{width:100%}
+  .footer-top{grid-template-columns:1fr}
+  .footer-brand{grid-column:auto}
+}</style>
 </head>
 <body>
 <div class="topline">Vegetarian Cloud Kitchen & Catering · Hyderabad · Prepared with care, served with gratitude</div>
@@ -428,7 +456,45 @@ Discuss Your Catering Requirements ↗
     </div>
   </div>
 </section></main>
-<footer><div class="wrap"><div class="footer-top"><div class="footer-brand"><img src="logo-emblem.png" alt="Annam Parabrahma Aaharam emblem"><div><strong>Annam Parabrahma Aaharam</strong><small>Feeding The Soul, Not Just The Body</small></div></div><nav class="footer-links"><a href="current-menu.html">Cloud Kitchen Menu</a><a href="catering-menu.html">Catering Menu</a><a href="https://instagram.com/annamparabrahmaaaharam" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.youtube.com/@AnnamParabrahmaAaharam" target="_blank" rel="noopener">YouTube ↗</a></nav></div><div class="contact-line"><span>Hyderabad, Telangana</span><span><a href="tel:+919000112505">+91 90001 12505</a> · <a href="mailto:annamparabrahma@gmail.com">annamparabrahma@gmail.com</a></span><span>© 2026 Annam Parabrahma Aaharam</span></div></div></footer>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <img src="logo-emblem.png"
+             alt="Annam Parabrahma Aaharam emblem">
+        <div>
+          <strong>Annam Parabrahma Aaharam</strong>
+          <small>Feeding The Soul, Not Just The Body</small>
+        </div>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="current-menu.html">Cloud Kitchen Menu</a>
+        <a href="catering-menu.html">Catering Menu</a>
+        <a href="https://instagram.com/annamparabrahmaaaharam"
+           target="_blank" rel="noopener">Instagram ↗</a>
+        <a href="https://www.youtube.com/@AnnamParabrahmaAaharam"
+           target="_blank" rel="noopener">YouTube ↗</a>
+      </nav>
+
+      <div class="footer-contact">
+        <strong>Contact Us</strong>
+        <span>Hyderabad, Telangana</span>
+        <a href="mailto:annamparabrahma@gmail.com">
+          annamparabrahma@gmail.com
+        </a>
+      </div>
+
+    </div>
+
+    <div class="contact-line">
+      <span>© 2026 Annam Parabrahma Aaharam</span>
+      <span>Feeding The Soul, Not Just The Body</span>
+    </div>
+  </div>
+</footer>
 <a class="float" href="https://wa.me/919000112505?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20food%20services." aria-label="Chat on WhatsApp" target="_blank" rel="noopener">✆</a>
 <script>const menuBtn=document.getElementById('menuBtn'),navLinks=document.getElementById('navLinks');menuBtn.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'×':'☰';menuBtn.setAttribute('aria-label',open?'Close navigation':'Open navigation')});navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰'}));</script>
 </body></html>

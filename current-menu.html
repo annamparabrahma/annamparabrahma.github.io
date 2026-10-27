@@ -4,108 +4,121 @@
 <meta name="description" content="Current cloud kitchen menu from Annam Parabrahma Aaharam in Hyderabad. Vegetarian lunch, dinner, biryani and pulao for advance orders.">
 <meta name="theme-color" content="#2E5D34"><title>Current Menu | Annam Parabrahma Aaharam</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--green:#2E5D34;--dark:#1F4425;--gold:#C8A45D;--cream:#f8f3e7;--light:#fffdf8;--ink:#292d29;--muted:#626a61;--rust:#A34824;--shadow:0 12px 34px rgba(31,68,37,.09)}*{box-sizing:border-box;margin:0;padding:0}body{font-family:Poppins,sans-serif;background:var(--light);color:var(--ink);line-height:1.7}a{color:inherit}.container{width:min(1040px,calc(100% - 32px));margin:auto}.navbar{background:rgba(255,253,248,.97);border-bottom:1px solid #e2e8df;position:sticky;top:0;z-index:10}.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.brand{display:flex;align-items:center;gap:10px;color:var(--green);font-weight:700;text-decoration:none}.brand img{width:44px;height:44px;object-fit:contain}.nav a.back{font-weight:600;color:var(--green);text-decoration:none}.hero{background:radial-gradient(circle at 80% 15%,rgba(200,164,93,.25),transparent 28%),linear-gradient(135deg,var(--dark),var(--green));color:white;padding:62px 0 54px}.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:12px;color:#f0d9a6;font-weight:600}.hero h1{font-size:clamp(32px,5vw,48px);line-height:1.2;margin:12px 0}.hero p{max-width:720px;color:#f4f4ed}.hero .tag{color:#f1d9a5;font-size:18px;margin-bottom:10px}.notice{background:#edf4eb;border:1px solid #d8e5d4;padding:16px 18px;border-radius:14px;margin:26px auto 8px;color:var(--dark);font-size:14px}.menus{padding:42px 0 70px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.card{background:white;border:1px solid #e8eadf;border-radius:20px;padding:28px;box-shadow:var(--shadow);display:flex;flex-direction:column}.card h2{color:var(--green);font-size:25px;line-height:1.25;margin-bottom:6px}.sub{color:var(--muted);font-size:14px;margin-bottom:18px}.price{font-size:27px;font-weight:700;color:var(--green);margin:5px 0 12px}.price small{font-size:14px;font-weight:500;color:var(--muted)}.card ul{list-style:none;margin:0 0 18px}.card li{padding:8px 0;border-bottom:1px solid #f0f0e9}.card li:before{content:'✓';color:var(--rust);font-weight:700;margin-right:9px}.detail{background:var(--cream);border-radius:12px;padding:12px 14px;font-size:13px;margin-top:auto}.order{display:inline-flex;justify-content:center;background:var(--gold);color:#201b10;text-decoration:none;font-weight:700;padding:12px 16px;border-radius:999px;margin-top:16px}.section-title{text-align:center;margin:0 auto 26px;max-width:700px}.section-title h2{color:var(--green);font-size:clamp(26px,4vw,34px)}.section-title p{color:var(--muted)}.terms{background:#f8f3e7;padding:28px 0}.terms h2{color:var(--green);font-size:22px;margin-bottom:8px}.terms ul{padding-left:22px;color:var(--muted)}footer{background:var(--dark);color:white;padding:26px 0;text-align:center}footer p{font-size:13px;color:#e4e9df}footer a{color:#f0d9a6}.float{position:fixed;right:18px;bottom:18px;background:#25D366;color:white;text-decoration:none;width:54px;height:54px;display:grid;place-items:center;border-radius:50%;font-size:25px;box-shadow:0 6px 20px #0003}@media(max-width:700px){.grid{grid-template-columns:1fr}.card{padding:23px}.hero{padding:48px 0}.nav{padding:10px 0}}
 
-.food-promise {
-  background: var(--cream);
-  padding: 48px 20px;
-  text-align: center;
-  border-top: 1px solid #e8dfca;
+:root{
+  --forest:#182b22;--forest2:#294735;--cream:#f4efe4;--paper:#fbf9f3;
+  --gold:#c7a66a;--clay:#a65c43;--ink:#202720;--muted:#687168;
+  --line:rgba(24,43,34,.17);--serif:'Playfair Display',Georgia,serif;
+  --sans:'DM Sans',Arial,sans-serif;
 }
-
-.food-promise-inner {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 32px;
-  background: var(--light);
-  border: 1px solid #e8dfca;
-  border-radius: 22px;
-  box-shadow: var(--shadow);
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.75}
+a{color:inherit}
+.container{width:min(1120px,calc(100% - 44px));margin:0 auto}
+.navbar{position:sticky;top:0;z-index:10;background:rgba(251,249,243,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
+.nav{min-height:80px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--forest);font-family:var(--serif);font-size:17px;font-weight:600;text-decoration:none}
+.brand img{width:52px;height:52px;object-fit:contain}
+.nav a.back{color:var(--forest);font-size:13px;font-weight:600;text-decoration:none;border-bottom:1px solid var(--gold);padding:5px 0}
+.hero{position:relative;overflow:hidden;background:var(--forest);color:var(--paper);padding:60px 0 68px;text-align:center}
+.hero:after{content:"";position:absolute;inset:14px;border:1px solid rgba(199,166,106,.28);pointer-events:none}
+.hero .container{position:relative;z-index:1;max-width:820px}
+.eyebrow,.section-kicker,.menu-number{font-size:10px;letter-spacing:2.3px;text-transform:uppercase;font-weight:700}
+.eyebrow{color:var(--gold)}
+.heritage-arch{width:145px;margin:18px auto 10px;color:var(--gold)}
+.heritage-arch svg{display:block;width:100%;height:auto}
+.hero h1{font-family:var(--serif);font-size:clamp(38px,5.5vw,62px);font-weight:500;line-height:1.1;letter-spacing:-1px;margin:8px auto 12px;max-width:760px}
+.hero .hero-kicker{color:var(--gold);font-size:11px;text-transform:uppercase;letter-spacing:3px;margin:0 0 22px}
+.hero .tag{font-family:var(--serif);font-size:18px;font-style:italic;color:#e1d0ae;margin:8px 0 20px}
+.hero p:not(.tag):not(.hero-kicker){max-width:670px;margin:0 auto;color:rgba(251,249,243,.84);font-size:14px;line-height:1.95}
+.menus{padding:68px 0 72px}
+.section-title{text-align:center;max-width:720px;margin:0 auto 34px}
+.section-kicker{color:#987747}
+.section-title h2{font-family:var(--serif);font-weight:500;color:var(--forest);font-size:clamp(31px,4vw,43px);line-height:1.2;margin:12px 0}
+.section-title p{font-size:14px;color:var(--muted)}
+.menu-list{border-top:1px solid var(--line)}
+.menu-entry{display:grid;grid-template-columns:minmax(220px,.78fr) minmax(0,1.5fr);gap:42px;padding:36px 0 38px;border-bottom:1px solid var(--line)}
+.menu-entry-side{border-right:1px solid rgba(199,166,106,.65);padding:0 30px 0 0}
+.menu-number{color:#987747;display:inline-block}
+.menu-entry-side h2,.menu-future h2{font-family:var(--serif);font-weight:500;color:var(--forest);font-size:37px;line-height:1.15;margin:12px 0 8px}
+.sub{font-size:14px;color:var(--muted);line-height:1.7;margin-bottom:16px}
+.price{font-family:var(--serif);font-size:34px;font-weight:600;color:var(--forest);line-height:1.2;margin:17px 0 14px}
+.price small,.rice-price small{font-family:var(--sans);font-size:12px;font-weight:500;color:var(--muted)}
+.menu-side-note{border-top:1px solid var(--line);padding-top:12px;color:var(--muted);font-size:12px;line-height:1.6}
+.menu-side-note strong{font-size:14px;color:var(--forest);font-weight:600}
+.menu-intro{font-family:var(--serif);font-size:17px;line-height:1.65;color:#465248;margin:0 0 16px}
+.menu-items{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:28px}
+.menu-items span{position:relative;padding:9px 0 9px 17px;border-bottom:1px solid rgba(24,43,34,.09);font-size:13px;line-height:1.55}
+.menu-items span:before{content:"";position:absolute;left:0;top:17px;width:5px;height:5px;border-radius:50%;background:var(--gold)}
+.menu-availability{font-size:12px;color:var(--muted);line-height:1.8;margin-top:16px}
+.order{display:inline-flex;align-items:center;justify-content:center;background:var(--forest);color:var(--paper);text-decoration:none;font-size:12px;font-weight:600;letter-spacing:.2px;padding:12px 18px;border:1px solid var(--forest);border-radius:2px;margin-top:17px;transition:background .2s,color .2s,border-color .2s}
+.order:hover{background:var(--gold);border-color:var(--gold);color:var(--forest)}
+.menu-entry-biryani .menu-entry-side h2{font-size:34px}
+.rice-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:18px 0}
+.rice-options>div{display:flex;flex-direction:column;gap:8px;padding:18px 20px 18px 0}
+.rice-options>div+div{border-left:1px solid var(--line);padding-left:22px}
+.rice-type{font-size:9px;letter-spacing:1.8px;color:var(--clay);font-weight:700;margin-bottom:3px}
+.rice-options strong{font-size:13px;font-weight:500;color:var(--forest)}
+.rice-price{font-family:var(--serif);font-size:25px;color:var(--forest);margin-top:6px}
+.menu-future{display:grid;grid-template-columns:54px minmax(0,1fr) auto;align-items:center;gap:24px;margin-top:36px;padding:27px 30px;background:var(--cream);border:1px solid rgba(199,166,106,.7)}
+.future-mark{font-family:var(--serif);font-size:36px;color:var(--gold);text-align:center}
+.menu-future h2{font-size:30px;margin:7px 0 8px}
+.menu-future p{max-width:680px;font-size:13px;line-height:1.85;color:var(--muted)}
+.menu-future .order{margin:0;white-space:nowrap}
+.notice{background:transparent;border:1px solid var(--line);border-left:3px solid var(--gold);padding:17px 20px;margin:30px auto 0;color:#4f5b50;font-size:12px;line-height:1.9}
+.food-promise{background:var(--cream);padding:58px 20px;border-top:1px solid rgba(199,166,106,.55);text-align:center}
+.food-promise-inner{max-width:1000px;margin:0 auto;padding:38px 34px;background:var(--paper);border:1px solid var(--line)}
+.food-promise .promise-icon{font-size:28px;margin-bottom:10px}
+.food-promise h2{font-family:var(--serif);font-weight:500;color:var(--forest);font-size:clamp(32px,4vw,42px);margin-bottom:8px}
+.food-promise h3{font-family:var(--serif);font-style:italic;color:#987747;font-weight:400;font-size:17px;margin-bottom:30px}
+.promise-items{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-bottom:26px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.promise-item{background:transparent;border:0;border-right:1px solid var(--line);padding:22px 12px;color:var(--forest);font-size:12px;font-weight:600;line-height:1.6;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px}
+.promise-item:last-child{border-right:0}
+.promise-item span{font-size:25px}
+.food-promise .promise-description{max-width:700px;margin:0 auto;color:var(--muted);font-size:13px;line-height:1.9}
+footer{background:var(--forest);color:var(--paper);padding:34px 0;border-top:3px solid var(--gold);text-align:center}
+footer strong{font-family:var(--serif);font-weight:500;letter-spacing:1px}
+footer p{font-size:12px;color:rgba(251,249,243,.76);line-height:1.9;margin-top:5px}
+footer a{color:var(--gold)}
+.float{position:fixed;right:18px;bottom:18px;z-index:20;background:var(--forest);color:white;text-decoration:none;width:52px;height:52px;display:grid;place-items:center;border:1px solid var(--gold);border-radius:50%;font-size:25px;box-shadow:0 5px 20px rgba(0,0,0,.18)}
+@media(max-width:700px){
+ .container{width:min(100% - 32px,560px)}
+ .nav{min-height:70px}.brand{font-size:14px;gap:8px}.brand img{width:44px;height:44px}.nav a.back{font-size:12px}
+ .hero{padding:48px 0 52px}.hero:after{inset:8px}.heritage-arch{width:115px;margin:16px auto 8px}.hero h1{font-size:clamp(36px,9vw,50px);letter-spacing:-.5px}.hero .hero-kicker{letter-spacing:2px}.hero p:not(.tag):not(.hero-kicker){font-size:13px}
+ .menus{padding:45px 0 50px}.section-title{margin-bottom:25px}.section-title h2{font-size:33px}
+ .menu-entry{grid-template-columns:1fr;gap:19px;padding:28px 0 30px}
+ .menu-entry-side{border-right:0;border-bottom:1px solid rgba(199,166,106,.65);padding:0 0 18px}
+ .menu-entry-side h2{font-size:33px;margin:8px 0}.price{font-size:30px;margin:12px 0}
+ .menu-items{grid-template-columns:1fr;column-gap:0}.menu-items span{padding:9px 0 9px 17px}
+ .rice-options>div{padding-right:12px}.rice-options>div+div{padding-left:14px}
+ .menu-future{grid-template-columns:34px minmax(0,1fr);gap:14px;margin-top:26px;padding:22px 17px}
+ .future-mark{font-size:29px;align-self:start;padding-top:2px}.menu-future h2{font-size:27px}.menu-future .order{grid-column:2;justify-self:start;margin-top:2px;white-space:normal}
+ .notice{margin-top:24px;padding:15px 16px}
+ .food-promise{padding:38px 14px}.food-promise-inner{padding:27px 16px}.promise-items{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .promise-item{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 8px}.promise-item:nth-child(2){border-right:0}.promise-item:nth-child(3),.promise-item:nth-child(4){border-bottom:0}.promise-item:nth-child(4){border-right:0}
 }
-
-.food-promise .promise-icon {
-  font-size: 34px;
-  margin-bottom: 8px;
-}
-
-.food-promise h2 {
-  color: var(--green);
-  font-size: clamp(27px, 4vw, 36px);
-  margin-bottom: 8px;
-}
-
-.food-promise h3 {
-  color: #805b2a;
-  font-size: clamp(15px, 2vw, 19px);
-  font-weight: 500;
-  margin-bottom: 28px;
-}
-
-.promise-items {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
-  margin-bottom: 24px;
-}
-
-.promise-item {
-  background: #edf4eb;
-  border: 1px solid #dce7d8;
-  border-radius: 16px;
-  padding: 20px 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  color: var(--green);
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5;
-}
-
-.promise-item span {
-  font-size: 28px;
-}
-
-.food-promise .promise-description {
-  max-width: 700px;
-  margin: 0 auto;
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.9;
-}
-
-@media (max-width: 700px) {
-  .food-promise {
-    padding: 32px 14px;
-  }
-
-  .food-promise-inner {
-    padding: 25px 16px;
-  }
-
-  .promise-items {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-  }
-
-  .promise-item {
-    padding: 18px 8px;
-    font-size: 13px;
-  }
-}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.order{transition:none}}
 
 </style></head><body>
 <header class="navbar"><div class="container nav"><a class="brand" href="index.html"><img src="logo-emblem.png" alt="Annam Parabrahma Aaharam logo" onerror="this.style.display='none'"><span>Annam Parabrahma Aaharam</span></a><a class="back" href="index.html">← Back to Home</a></div></header>
-<main><section class="hero"><div class="container"><span class="eyebrow">Pure Vegetarian · Hyderabad</span><h1>Cloud Kitchen Menu</h1><p class="tag">Feeding The Soul, Not Just The Body</p><p>From traditional vegetarian favourites to fragrant biryanis and comforting pulaos, every dish is prepared with care, thoughtful ingredients and attention to flavour. Sattvic food options are also available on request. Please enquire in advance so we can discuss suitable ingredients, preparation requirements and availability for your date.</p></div></section>
-<section class="menus"><div class="container"><div class="section-title"><h2>Discover Our Flavours</h2><p>Choose your meal and message us to check availability and place an advance order.</p></div><div class="grid">
-<article class="card"><h2>🌿 Lunch</h2><p class="sub">Wholesome by Tradition. Made with Love.</p><p class="sub">Thoughtfully prepared vegetarian food inspired by traditional home cooking, bringing you the familiar flavours, comforting warmth and loving care of a meal made at home.</p><div class="price">₹179 <small>/ person</small></div><ul><li>Rice</li><li>Pappu (dal) — variety based on availability</li><li>Vegetable curry</li><li>Vegetable fry</li><li>Sambar or rasam, depending on the day's menu</li><li>Pickle, curd and papad</li><li>One sweet of the day</li></ul><div class="detail"><strong>Minimum order:</strong> 4 people<br>Advance booking only. Daily varieties may change; the menu is confirmed before accepting your order.</div><a class="order" target="_blank" rel="noopener noreferrer" href="https://wa.me/919000112505?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20the%20vegetarian%20lunch%20for%20at%20least%204%20people.%20Please%20confirm%20availability.">Enquire about Lunch ↗</a></article>
-<article class="card"><h2>🌙 Dinner</h2><p class="sub">Comfort in Every Bite.</p><p class="sub">Enjoy chapathis, phulkas or traditional jowar rotis, paired with vegetarian curry and dal, prepared with care for a comforting evening meal.</p><div class="price">₹179 <small>/ person</small></div><ul><li>Choose chapathi, phulka or jowar roti (jonna rotte)</li><li>Chapathi or phulka: 3 per person</li><li>Jowar roti: 2 medium rotis per person</li><li>One vegetarian curry</li><li>One pappu (dal)</li></ul><div class="detail"><strong>Minimum order:</strong> 4 people<br>Advance booking only. Roti, curry and dal availability will be confirmed before accepting your order.</div><a class="order" target="_blank" rel="noopener noreferrer" href="https://wa.me/919000112505?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20the%20vegetarian%20dinner%20for%20at%20least%204%20people.%20Please%20confirm%20availability.">Enquire about Dinner ↗</a></article>
-<article class="card"><h2>🍚 Biryani &amp; Pulao</h2><p class="sub">Aromatic Flavours. Crafted with Care.</p><p class="sub">Fragrant basmati rice, carefully selected ingredients and a balanced blend of spices come together in our vegetarian biryanis and pulaos, prepared with attention to flavour, quality and every detail.</p><ul><li>Vegetable Biryani</li><li>Paneer Biryani</li><li>Vegetable Pulao</li><li>Paneer Pulao</li></ul><div class="price">₹179–₹199 <small>/ person</small></div><div class="detail"><strong>Minimum order:</strong> 4 people<br>Vegetable options: ₹179/person · Paneer options: ₹199/person<br>Advance booking only.</div><a class="order" target="_blank" rel="noopener noreferrer" href="https://wa.me/919000112505?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20Biryani%20or%20Pulao%20for%20at%20least%204%20people.%20Please%20confirm%20availability%20and%20ordering%20details.">Enquire about Biryani &amp; Pulao ↗</a></article>
-<article class="card" style="background:linear-gradient(145deg,#f8f3e7,#fffdf8);border:1px dashed #c8a45d;justify-content:center;align-items:flex-start;min-height:300px"><div style="font-size:38px;margin-bottom:12px" aria-hidden="true">🌿</div><p class="sub" style="color:#805b2a;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px">A little more is on the way</p><h2 style="font-size:30px">Many More to Come!</h2><p style="margin:8px 0 16px;color:#626a61">We’re growing our menu, and your ideas matter. Tell us which vegetarian dishes you’d love to see next and help shape our future offerings. Have a family favourite or a dish you would love us to prepare? Share your suggestion with us.</p><a class="order" target="_blank" rel="noopener noreferrer" href="https://wa.me/919000112505?text=Hello%2C%20I%20have%20a%20suggestion%20for%20the%20Annam%20Parabrahma%20Aaharam%20menu.%20My%20suggestion%20is%3A%20">Suggest a Dish ↗</a></article>
+<main><section class="hero"><div class="container"><span class="eyebrow">A Table of Tradition · Hyderabad</span><div class="heritage-arch" aria-hidden="true"><svg viewBox="0 0 180 72" role="presentation"><path d="M18 68V38C18 17 35 5 56 5H124C145 5 162 17 162 38V68" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M36 68V40C36 27 45 20 58 20H122C135 20 144 27 144 40V68" fill="none" stroke="currentColor" stroke-width=".7" opacity=".65"/><path d="M81 39c4-9 14-9 18 0-4 9-14 9-18 0Z" fill="none" stroke="currentColor" stroke-width="1"/><path d="M90 30v18M83 39h14" stroke="currentColor" stroke-width=".7"/><path d="M69 53c7-8 14-8 21 0M90 53c7-8 14-8 21 0" fill="none" stroke="currentColor" stroke-width=".7"/></svg></div><h1>Food, Rooted in Tradition.</h1><p class="hero-kicker">Our Cloud Kitchen Menu</p><p class="tag">Feeding The Soul, Not Just The Body</p><p>From traditional vegetarian favourites to fragrant biryanis and comforting pulaos, every dish is prepared with care, thoughtful ingredients and attention to flavour. Sattvic food options are also available on request. Please enquire in advance so we can discuss suitable ingredients, preparation requirements and availability for your date.</p></div></section>
+<section class="menus"><div class="container"><div class="section-title"><span class="section-kicker">THE MENU</span><h2>Thoughtfully Made.<br>Beautifully Served.</h2><p>Choose your meal and message us to check availability and place an advance order.</p></div><div class="menu-list">
+<article class="menu-entry">
+  <div class="menu-entry-side"><span class="menu-number">01 / EVERYDAY MEALS</span><h2>Lunch</h2><p class="sub">Wholesome by Tradition.<br>Made with Love.</p><div class="price">₹179 <small>/ person</small></div><div class="menu-side-note">Minimum order<br><strong>4 people</strong></div></div>
+  <div class="menu-entry-main"><p class="menu-intro">Traditional vegetarian food inspired by home cooking, bringing familiar flavours, comforting warmth and the care of a meal made at home.</p><div class="menu-items"><span>Rice</span><span>Pappu (dal) — variety based on availability</span><span>Vegetable curry</span><span>Vegetable fry</span><span>Sambar or rasam, depending on the day's menu</span><span>Pickle, curd and papad</span><span>One sweet of the day</span></div><p class="menu-availability">Advance booking only. Daily varieties may change; the menu is confirmed before accepting your order.</p><a class="order" target="_blank" rel="noopener noreferrer" href="https://wa.me/919000112505?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20the%20vegetarian%20lunch%20for%20at%20least%204%20people.%20Please%20confirm%20availability.">Enquire about Lunch ↗</a></div>
+</article>
+<article class="menu-entry">
+  <div class="menu-entry-side"><span class="menu-number">02 / EVENING COMFORTS</span><h2>Dinner</h2><p class="sub">Comfort in Every Bite.</p><div class="price">₹179 <small>/ person</small></div><div class="menu-side-note">Minimum order<br><strong>4 people</strong></div></div>
+  <div class="menu-entry-main"><p class="menu-intro">Choose chapathis, phulkas or traditional jowar rotis, paired with vegetarian curry and dal for a comforting evening meal.</p><div class="menu-items"><span>Choose chapathi, phulka or jowar roti (jonna rotte)</span><span>Chapathi or phulka: 3 per person</span><span>Jowar roti: 2 medium rotis per person</span><span>One vegetarian curry</span><span>One pappu (dal)</span></div><p class="menu-availability">Advance booking only. Roti, curry and dal availability will be confirmed before accepting your order.</p><a class="order" target="_blank" rel="noopener noreferrer" href="https://wa.me/919000112505?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20the%20vegetarian%20dinner%20for%20at%20least%204%20people.%20Please%20confirm%20availability.">Enquire about Dinner ↗</a></div>
+</article>
+<article class="menu-entry menu-entry-biryani">
+  <div class="menu-entry-side"><span class="menu-number">03 / RICE SPECIALITIES</span><h2>Biryani<br>&amp; Pulao</h2><p class="sub">Aromatic Flavours.<br>Crafted with Care.</p><div class="menu-side-note">Minimum order<br><strong>4 people</strong></div></div>
+  <div class="menu-entry-main"><p class="menu-intro">Fragrant basmati rice, carefully selected ingredients and a balanced blend of spices, prepared with attention to flavour and every detail.</p><div class="rice-options"><div><span class="rice-type">VEGETARIAN</span><strong>Vegetable Biryani</strong><strong>Vegetable Pulao</strong><span class="rice-price">₹179 <small>/ person</small></span></div><div><span class="rice-type">PANEER</span><strong>Paneer Biryani</strong><strong>Paneer Pulao</strong><span class="rice-price">₹199 <small>/ person</small></span></div></div><p class="menu-availability">Advance booking only. Availability and ordering details are confirmed before accepting your order.</p><a class="order" target="_blank" rel="noopener noreferrer" href="https://wa.me/919000112505?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20Biryani%20or%20Pulao%20for%20at%20least%204%20people.%20Please%20confirm%20availability%20and%20ordering%20details.">Enquire about Biryani &amp; Pulao ↗</a></div>
+</article>
+<article class="menu-future"><div class="future-mark" aria-hidden="true">✳</div><div><span class="menu-number">A LITTLE MORE IS ON THE WAY</span><h2>Many More to Come!</h2><p>We’re growing our menu, and your ideas matter. Tell us which vegetarian dishes you’d love to see next and help shape our future offerings. Have a family favourite or a dish you would love us to prepare? Share your suggestion with us.</p></div><a class="order" target="_blank" rel="noopener noreferrer" href="https://wa.me/919000112505?text=Hello%2C%20I%20have%20a%20suggestion%20for%20the%20Annam%20Parabrahma%20Aaharam%20menu.%20My%20suggestion%20is%3A%20">Suggest a Dish ↗</a></article>
 </div><div class="notice"><strong>Please note:</strong> All menu items require advance booking. Final availability and menu details are confirmed before an order is accepted. Delivery charges, if applicable, are extra. Please message us with your date, quantity and delivery location. We welcome your suggestions for future menu additions.</div></div></section>
 
 

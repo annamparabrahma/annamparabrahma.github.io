@@ -13,10 +13,10 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.7}a{color:inherit}img{max-width:100%;display:block}.wrap{width:min(1180px,calc(100% - 44px));margin:auto}
 
 .topline{background:var(--forest);color:#e8ddc8;text-align:center;padding:10px 16px;font-size:12px;letter-spacing:1.6px;font-weight:500;text-transform:uppercase;line-height:1.7}
-header{background:rgba(251,249,243,.96);position:sticky;top:0;z-index:10;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{min-height:88px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none}.brand img{
-  width:180px;
-  height:auto;
-  max-height:100px;
+header{background:rgba(251,249,243,.96);position:sticky;top:0;z-index:10;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{min-height:88px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+ .brand img{
+  width:68px;
+  height:68px;
   object-fit:contain;
   flex-shrink:0;
 }.brand-name{font-family:var(--serif);font-weight:700;color:var(--forest);font-size:20px;line-height:1.15}.brand-tag{display:block;color:#8c6d3d;font-size:10px;letter-spacing:.6px;margin-top:5px}.links{display:flex;align-items:center;gap:25px}.links a{text-decoration:none;font-size:12px;font-weight:600}.links a:hover{color:var(--clay)}.nav-cta{background:var(--forest);color:white!important;border-radius:2px;padding:12px 18px}.menu{display:none;background:none;border:1px solid var(--line);padding:9px 12px;font-size:20px}
@@ -196,7 +196,15 @@ section{padding:92px 0}.section-top{display:flex;align-items:end;justify-content
   line-height:1.8;
   overflow-wrap:anywhere;
 }
-  .footer-brand{display:flex;align-items:center;gap:13px}.footer-brand img{width:58px;height:58px;object-fit:contain;background:#f8f3e7;border-radius:50%;padding:4px}.footer-brand strong{
+  .footer-brand{display:flex;align-items:center;gap:13px}.footer-brand img{
+  width:68px;
+  height:68px;
+  object-fit:contain;
+  background:#f8f3e7;
+  border-radius:4px;
+  padding:3px;
+  flex-shrink:0;
+}.footer-brand strong{
   font-family:var(--serif);
   font-size:23px;
   font-weight:500;
@@ -243,7 +251,7 @@ section{padding:92px 0}.section-top{display:flex;align-items:end;justify-content
 }
 .float{position:fixed;right:20px;bottom:20px;z-index:20;background:#27734a;color:white;text-decoration:none;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-size:23px;box-shadow:0 8px 25px #0003}
 @media(max-width:850px){.links{gap:14px}.links a{font-size:11px}.hero-grid{gap:24px;min-height:0px}.hero-visual{min-height:380px}.story-grid{gap:35px}.occasion-grid{grid-template-columns:repeat(2,1fr)}.trust-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:650px){.philosophy-values{grid-template-columns:1fr;column-gap:0}.philosophy-intro{margin-bottom:26px}.philosophy-intro .philosophy-lead{font-size:20px}.wrap{width:calc(100% - 30px)}.topline{font-size:10px;letter-spacing:.8px;padding:9px 12px;line-height:1.6}.nav{min-height:75px;flex-wrap:wrap}.brand img{width:48px;height:48px}.brand-name{font-size:17px}.brand-tag{font-size:9px}.menu{display:block}.links{display:none;order:4;width:100%;padding:0 0 16px;flex-direction:column;align-items:stretch;gap:0}.links.open{display:flex}.links a{padding:10px 0;border-top:1px solid var(--line)}.links .nav-cta{margin-top:8px;text-align:center}.hero-grid{grid-template-columns:1fr;padding-top:16px;padding-bottom:16px;gap:20px}.hero h1{font-size:54px}.hero-visual{min-height:320px}.hero-photo{inset:0 18px 18px 0;width:calc(100% - 18px);height:calc(100% - 18px)}.photo-caption{width:190px;padding:14px 16px}.photo-caption strong{font-size:16px}.marquee-inner{justify-content:center;gap:12px 16px}.marquee span{font-size:9px;letter-spacing:1px}section{padding:62px 0}.section-top{display:block}.section-top p{margin-top:14px}.service-grid,.ritual-grid,.story-grid{grid-template-columns:1fr;gap:30px}.service{min-height:400px}.philosophy-intro h2{font-size:43px}.ritual-image{height:330px;order:2}.ritual-copy blockquote{font-size:34px}.occasion-grid{grid-template-columns:1fr 1fr}.occasion{padding:18px 14px;min-height:145px}.occasion h3{font-size:18px}.trust-grid{grid-template-columns:1fr 1fr;gap:8px}.trust-card{padding:16px}.trust-card h3{font-size:18px}.cta{padding-bottom:60px}.cta-panel{padding:28px;display:block}.cta-panel .btn{margin-top:12px;width:100%}.footer-top{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1/-1}.footer-links{gap:14px}.story-side{padding:30px}.story-side blockquote{font-size:26px}}
+@media(max-width:650px){.philosophy-values{grid-template-columns:1fr;column-gap:0}.philosophy-intro{margin-bottom:26px}.philosophy-intro .philosophy-lead{font-size:20px}.wrap{width:calc(100% - 30px)}.topline{font-size:10px;letter-spacing:.8px;padding:9px 12px;line-height:1.6}.nav{min-height:75px;flex-wrap:wrap}.brand img{width:54px;height:54px}.brand-name{font-size:17px}.brand-tag{font-size:9px}.menu{display:block}.links{display:none;order:4;width:100%;padding:0 0 16px;flex-direction:column;align-items:stretch;gap:0}.links.open{display:flex}.links a{padding:10px 0;border-top:1px solid var(--line)}.links .nav-cta{margin-top:8px;text-align:center}.hero-grid{grid-template-columns:1fr;padding-top:16px;padding-bottom:16px;gap:20px}.hero h1{font-size:54px}.hero-visual{min-height:320px}.hero-photo{inset:0 18px 18px 0;width:calc(100% - 18px);height:calc(100% - 18px)}.photo-caption{width:190px;padding:14px 16px}.photo-caption strong{font-size:16px}.marquee-inner{justify-content:center;gap:12px 16px}.marquee span{font-size:9px;letter-spacing:1px}section{padding:62px 0}.section-top{display:block}.section-top p{margin-top:14px}.service-grid,.ritual-grid,.story-grid{grid-template-columns:1fr;gap:30px}.service{min-height:400px}.philosophy-intro h2{font-size:43px}.ritual-image{height:330px;order:2}.ritual-copy blockquote{font-size:34px}.occasion-grid{grid-template-columns:1fr 1fr}.occasion{padding:18px 14px;min-height:145px}.occasion h3{font-size:18px}.trust-grid{grid-template-columns:1fr 1fr;gap:8px}.trust-card{padding:16px}.trust-card h3{font-size:18px}.cta{padding-bottom:60px}.cta-panel{padding:28px;display:block}.cta-panel .btn{margin-top:12px;width:100%}.footer-top{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1/-1}.footer-links{gap:14px}.story-side{padding:30px}.story-side blockquote{font-size:26px}}
 @media(max-width:380px)
   {
   .hero h1{font-size:46px}
@@ -258,8 +266,7 @@ section{padding:92px 0}.section-top{display:flex;align-items:end;justify-content
 <div class="topline">Vegetarian Cloud Kitchen & Catering · Hyderabad · Prepared with care, served with gratitude</div>
 <header><div class="wrap nav">
 <a class="brand" href="#home">
-  <img src="/logo-emblem.png?v=4" alt="Annam Parabrahma Aaharam logo">
-  <span>
+<img src="/logo-emblem.png?v=5" alt="Annam Parabrahma Aaharam emblem">  <span>
     <span class="brand-name">Annam Parabrahma Aaharam</span>
     <span class="brand-tag">Feeding The Soul, Not Just The Body</span>
   </span>
@@ -562,8 +569,8 @@ Discuss Your Catering Requirements ↗
     <div class="footer-top">
 
       <div class="footer-brand">
-        <img src="logo-emblem.png"
-             alt="Annam Parabrahma Aaharam emblem">
+        <img src="/logo-emblem.png?v=5"
+     alt="Annam Parabrahma Aaharam emblem">
         <div>
           <strong>Annam Parabrahma Aaharam</strong>
           <small>Feeding The Soul, Not Just The Body</small>
